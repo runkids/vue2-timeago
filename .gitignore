@@ -1,0 +1,4 @@
+node_modules
+.DS_Store
+.cache
+vue2-timeago.map

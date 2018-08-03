@@ -1,0 +1,30 @@
+{
+  "name": "vue2-timeago",
+  "version": "1.0.0",
+  "description": "A vue component used to format date with time ago statement.",
+  "main": "dist/vue2-timeago.js",
+  "keywords": [
+    "vue",
+    "time",
+    "ago",
+    "timeago"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runkids/vue2-timeago.git"
+  },
+  "author": "runkids <egg358358@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html -p 8081",
+    "build": "parcel build ./src/vue2-timeago.js"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.9.2",
+    "vue": "^2.5.17"
+  }
+}
