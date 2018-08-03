@@ -12,6 +12,7 @@
   -  2 days ago
   -  2017-08-03
 
+[Live Demo](https://codesandbox.io/embed/myomwvkojj)
 
 ## Installation 
 Get from npm / yarn:
@@ -117,7 +118,7 @@ You can do something when time refresh every time
 | tooltip  |  Boolean  |  false    | Show tooltip.|
 | todo  |  Function  |  false    | You can call a function when time refresh every time.|
 
-#Contributions
+## Contributions
 locale translations: The component needs more locale translations. You can `Open an issue to write the locale translations, or submit a pull request`. 
 See example [here](https://github.com/runkids/vue2-timeago/blob/master/src/lib/lang).
 
