@@ -11,6 +11,12 @@
   -  3h
   -  2 days ago
   -  2017-08-03
+- Rules:
+  -  less than 1 minute , show `just now`
+  -  1 minute ~ 1 hour , show `** minutes ago`
+  -  1 hour ~ 1 day , show `** hours ago`
+  -  1 day ~ 1 month( 31 days ) , show `** days ago`
+  -  more than 1 month( 31 days ) , show `yyyy-mm-dd hh:mm`
 
 [Live Demo](https://codesandbox.io/embed/myomwvkojj)
 
@@ -50,7 +56,7 @@ or just include [vue2-timeago.css](https://github.com/runkids/vue2-timeago/blob/
 
 ##### HTML
 ```html
-<TimeAgo :refresh="60" :datetime="new Date()" locale="zh_TW" tooltip></TimeAgo>
+<TimeAgo :refresh="60" :datetime="new Date(2018, 7, 4, 0, 24, 0)" locale="zh_TW" tooltip></TimeAgo>
 ```
 ## Examples
 
@@ -73,9 +79,22 @@ export default {
 2. datetime
 ```html
 <TimeAgo datetime="2018-08-03 15:47:00"></TimeAgo> 
-<TimeAgo :datetime="new Date()"></TimeAgo> use v-bind
+<TimeAgo :datetime="new Date(2018, 7, 4, 0, 24, 0)"></TimeAgo> use v-bind
 <TimeAgo :datetime="1533286641826"></TimeAgo> timestamp
 ```
+- Note. Don't bind with `new Date()` when you use refresh property.
+  Because every time refresh will get a new date value.
+
+  ```html
+  <TimeAgo :datetime="new Date(2018, 7, 4, 0, 24, 0)"></TimeAgo>  --> OK
+  <TimeAgo refresh :datetime="new Date()"></TimeAgo> --> not OK
+  ```
+
+  If you want use new Date() , just remove datetime property.
+
+  ```html
+  <TimeAgo refresh></TimeAgo>
+  ```
 
 3. refresh
 ```html
