@@ -44,7 +44,7 @@ export default {
 ```js
 import 'vue2-timeago/dist/vue2-timeago.css'
 ```
-or just include [style.css](https://github.com/runkids/vue2-timeago/blob/master/dist/style.css)
+or just include [vue2-timeago.css](https://github.com/runkids/vue2-timeago/blob/master/dist/vue2-timeago.css)
 
 
 ##### HTML
@@ -84,6 +84,7 @@ export default {
 
 4. tooltip
 <img src="https://i.imgur.com/mRMt7Ps.png"/>
+
 ```html
 <TimeAgo tooltip></TimeAgo> Show tooltip 
 ```
@@ -97,6 +98,7 @@ export default {
 6. todo
 You can do something when time refresh every time
 <img src="https://i.imgur.com/V1K6Xa2.gif"/>
+
 ```html
 <TimeAgo :refresh="1" :locale="locale" :todo="()=> count+=1"></TimeAgo>
 ```
@@ -117,7 +119,7 @@ You can do something when time refresh every time
 
 #Contributions
 locale translations: The component needs more locale translations. You can `Open an issue to write the locale translations, or submit a pull request`. 
-See example [here]().
+See example [here](https://github.com/runkids/vue2-timeago/blob/master/src/lib/lang).
 
 locale support list : 
 - en 

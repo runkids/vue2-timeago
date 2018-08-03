@@ -2,3 +2,5 @@
 *.log
 .babelrc
 node_modules
+src
+.cache
