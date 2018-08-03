@@ -112,7 +112,7 @@ You can do something when time refresh every time
 | Property  |  Type |  Default |  Description |
 | ------------ | ------------ | ------------ | ------------ |
 | datetime  |  Date, String, Number  |  new Date()  | The datetime to be formatted.|
-| locale  |  String  |  en    | Show button when scrollY equals a number.|
+| locale  |  String  |  en    | message language |
 | refresh  |  Boolean, Number  |  false    | The period to update the component, in seconds. When true it will be 60s. Also you can bind a number.|
 | long  |  Boolean  |  false    | Show long string with time message . ex. 3h -> 3 hours age|
 | tooltip  |  Boolean  |  false    | Show tooltip.|
