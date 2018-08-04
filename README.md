@@ -18,7 +18,8 @@
   -  1 day ~ 1 month( 31 days ) , show `** days ago`
   -  more than 1 month( 31 days ) , show `yyyy-mm-dd hh:mm`
 
-[Live Demo](https://codesandbox.io/embed/myomwvkojj)
+## Live Demo
+[![Edit vue2_timeago_demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/embed/myomwvkojj)
 
 ## Installation 
 Get from npm / yarn:
@@ -144,4 +145,4 @@ See example [here](https://github.com/runkids/vue2-timeago/blob/master/src/lib/l
 locale support list : 
 - en 
 - zh_TW
-- zh_CH
+- zh_CN
