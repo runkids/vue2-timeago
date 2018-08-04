@@ -56,15 +56,15 @@ or just include [vue2-timeago.css](https://github.com/runkids/vue2-timeago/blob/
 
 ##### HTML
 ```html
-<TimeAgo :refresh="60" :datetime="new Date(2018, 7, 4, 0, 24, 0)" locale="zh_TW" tooltip></TimeAgo>
+<time-ago :refresh="60" :datetime="new Date(2018, 7, 4, 0, 24, 0)" locale="zh_TW" tooltip></time-ago>
 ```
 ## Examples
 
 #####  1. locale
 Default locale is en, and the library supports en and zh_TW.
 ```html
-<TimeAgo locale="en"></TimeAgo> 
-<TimeAgo :locale="locale"></TimeAgo> use v-bind
+<time-ago locale="en"></time-ago> 
+<time-ago :locale="locale"></time-ago> use v-bind
 ```
 ```js
 export default {
@@ -78,41 +78,41 @@ export default {
 ```
 #####  2. datetime
 ```html
-<TimeAgo datetime="2018-08-03 15:47:00"></TimeAgo> 
-<TimeAgo :datetime="new Date(2018, 7, 4, 0, 24, 0)"></TimeAgo> use v-bind
-<TimeAgo :datetime="1533286641826"></TimeAgo> timestamp
+<time-ago datetime="2018-08-03 15:47:00"></time-ago> 
+<time-ago :datetime="new Date(2018, 7, 4, 0, 24, 0)"></time-ago> use v-bind
+<time-ago :datetime="1533286641826"></time-ago> timestamp
 ```
   - Note. Don't bind with `new Date()` when you use refresh property.
   Because every time refresh will get a new date value.
 
     ```html
-    <TimeAgo :datetime="new Date(2018, 7, 4, 0, 24, 0)"></TimeAgo>  --> OK
-    <TimeAgo refresh :datetime="new Date()"></TimeAgo> --> not OK
+    <time-ago :datetime="new Date(2018, 7, 4, 0, 24, 0)"></time-ago>  --> OK
+    <time-ago refresh :datetime="new Date()"></time-ago> --> not OK
     ```
 
     If you want use new Date() , just remove datetime property.
 
     ```html
-    <TimeAgo refresh></TimeAgo>
+    <time-ago refresh></time-ago>
     ```
 
 #####  3.  refresh
 ```html
-<TimeAgo refresh></TimeAgo> Boolean , default refresh time 60/s
-<TimeAgo :refresh="3600"></TimeAgo> bind value with a number
+<time-ago refresh></time-ago> Boolean , default refresh time 60/s
+<time-ago :refresh="3600"></time-ago> bind value with a number
 ```
 
 #####  4. tooltip
 <img src="https://i.imgur.com/mRMt7Ps.png"/>
 
 ```html
-<TimeAgo tooltip></TimeAgo> Show tooltip 
+<time-ago tooltip></time-ago> Show tooltip 
 ```
 
 #####  5. long
 ```html
-<TimeAgo :datetime="datetime"></TimeAgo> show : 2d
-<TimeAgo :datetime="datetime" long></TimeAgo> show : 2 days ago
+<time-ago :datetime="datetime"></time-ago> show : 2d
+<time-ago :datetime="datetime" long></time-ago> show : 2 days ago
 ```
 
 #####  6. todo
@@ -120,11 +120,11 @@ You can do something when time refresh every time
 <img src="https://i.imgur.com/V1K6Xa2.gif"/>
 
 ```html
-<TimeAgo :refresh="1" :locale="locale" :todo="()=> count+=1"></TimeAgo>
+<time-ago :refresh="1" :locale="locale" :todo="()=> count+=1"></time-ago>
 ```
 #####  7. native event
 ```html
-<TimeAgo @click.native="todo"></TimeAgo>
+<time-ago @click.native="todo"></>
 ```
 ## Props
 
