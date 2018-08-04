@@ -60,7 +60,7 @@ or just include [vue2-timeago.css](https://github.com/runkids/vue2-timeago/blob/
 ```
 ## Examples
 
-1. locale
+#####  1. locale
 Default locale is en, and the library supports en and zh_TW.
 ```html
 <TimeAgo locale="en"></TimeAgo> 
@@ -76,53 +76,53 @@ export default {
   },
   ...
 ```
-2. datetime
+#####  2. datetime
 ```html
 <TimeAgo datetime="2018-08-03 15:47:00"></TimeAgo> 
 <TimeAgo :datetime="new Date(2018, 7, 4, 0, 24, 0)"></TimeAgo> use v-bind
 <TimeAgo :datetime="1533286641826"></TimeAgo> timestamp
 ```
-- Note. Don't bind with `new Date()` when you use refresh property.
+  - Note. Don't bind with `new Date()` when you use refresh property.
   Because every time refresh will get a new date value.
 
-  ```html
-  <TimeAgo :datetime="new Date(2018, 7, 4, 0, 24, 0)"></TimeAgo>  --> OK
-  <TimeAgo refresh :datetime="new Date()"></TimeAgo> --> not OK
-  ```
+    ```html
+    <TimeAgo :datetime="new Date(2018, 7, 4, 0, 24, 0)"></TimeAgo>  --> OK
+    <TimeAgo refresh :datetime="new Date()"></TimeAgo> --> not OK
+    ```
 
-  If you want use new Date() , just remove datetime property.
+    If you want use new Date() , just remove datetime property.
 
-  ```html
-  <TimeAgo refresh></TimeAgo>
-  ```
+    ```html
+    <TimeAgo refresh></TimeAgo>
+    ```
 
-3. refresh
+#####  3.  refresh
 ```html
 <TimeAgo refresh></TimeAgo> Boolean , default refresh time 60/s
 <TimeAgo :refresh="3600"></TimeAgo> bind value with a number
 ```
 
-4. tooltip
+#####  4. tooltip
 <img src="https://i.imgur.com/mRMt7Ps.png"/>
 
 ```html
 <TimeAgo tooltip></TimeAgo> Show tooltip 
 ```
 
-5. long
+#####  5. long
 ```html
 <TimeAgo :datetime="datetime"></TimeAgo> show : 2d
 <TimeAgo :datetime="datetime" long></TimeAgo> show : 2 days ago
 ```
 
-6. todo
+#####  6. todo
 You can do something when time refresh every time
 <img src="https://i.imgur.com/V1K6Xa2.gif"/>
 
 ```html
 <TimeAgo :refresh="1" :locale="locale" :todo="()=> count+=1"></TimeAgo>
 ```
-7. native event
+#####  7. native event
 ```html
 <TimeAgo @click.native="todo"></TimeAgo>
 ```
