@@ -143,6 +143,7 @@ locale translations: The component needs more locale translations. You can `Open
 See example [here](https://github.com/runkids/vue2-timeago/blob/master/src/lib/lang).
 
 locale support list : 
-- en 
-- zh_TW
-- zh_CN
+- English ( en )  
+- 繁體中文 ( zh_TW ) 
+- 简体中文 ( zh_CN )
+- 日本語 ( jp )
