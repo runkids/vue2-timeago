@@ -29,10 +29,10 @@ npm i vue2-timeago
 ```js
 yarn add vue2-timeago
 ```
-or just include [vue2-timeago.js](https://github.com/runkids/vue2-timeago/blob/master/dist/vue2-timeago.js) to your view like 
+or just include [vue2-timeago.js](https://cdn.jsdelivr.net/npm/vue2-timeago@1.1.3/dist/vue2-timeago.min.js) to your view like 
 
 ```js
-<script src='./vue2-timeago.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@1.1.3/dist/vue2-timeago.min.js'></script>
 ```
 
 ## Usage
@@ -52,7 +52,7 @@ export default {
 ```js
 import 'vue2-timeago/dist/vue2-timeago.css'
 ```
-or just include [vue2-timeago.css](https://github.com/runkids/vue2-timeago/blob/master/dist/vue2-timeago.css)
+or just include [vue2-timeago.css](https://cdn.jsdelivr.net/npm/vue2-timeago@1.1.3/dist/vue2-timeago.css)
 
 
 ##### HTML
