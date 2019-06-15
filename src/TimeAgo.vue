@@ -1,14 +1,15 @@
 <template>
-  <a :class="aTagStyle">
-    <span v-if="tooltip" class="tooltiptext">{{nowString}}</span>
-    <span class="v_time_ago_span">{{timeago}}</span>
-  </a>
+  <el-tooltip :content="`${nowString}`" :placement="placement" :disabled="!tooltip">
+    <span class="v-time-ago__text">{{timeago}}</span>
+  </el-tooltip>
 </template>
 
 <script>
 import timer from '../src/lib/index';
+import { Tooltip } from 'element-ui';
 
 export default {
+  name: 'TimeAgo',
   props:{
     datetime: {
       type: [String, Date, Number],
@@ -31,7 +32,7 @@ export default {
        default: e => {},
     },
     tooltip:{
-      type: Boolean,
+      type: [String, Boolean],
       default: false,
     }
   },
@@ -43,12 +44,12 @@ export default {
       nowString: '',
 
       intervalId: null,
+    }
+  },
 
-      aTagStyle:{
-        'v_time_ago_a': true,
-        tooltip: this.tooltip
-      },
-      
+  computed: {
+    placement () {
+      return typeof this.tooltip === 'string' ? this.tooltip : 'top'
     }
   },
 
@@ -78,65 +79,18 @@ export default {
 }
 </script>
 
-<style>
-.v_time_ago_a{
+<style scoped>
+.v-time-ago__text{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   cursor: pointer;
   color: #657786;
   text-decoration: none;
-}
-
-.v_time_ago_a:hover, .v_time_ago_a:focus, .v_time_ago_a:active{
-  color: #1B95E0;
-  text-decoration: underline;
-}
-
-.v_time_ago_span{
   line-height: 20px;
   list-style-image: none;
   list-style-position: outside;
   list-style-type: none;
   letter-spacing: 0.1px;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 150px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-  transition-delay: .5s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
 }
 </style>
 

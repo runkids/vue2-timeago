@@ -21,6 +21,10 @@ class TimeAgo{
     this.locale = locale;
   }
 
+  getTimeAgoString(timer, type) {
+    return  typeof type === 'string' ? `${timer}${type}` : type(timer);
+  }
+
   getTimeAgo(){
     let {now ,min ,hour ,day} = lang[this.locale][this.type];
     let timestamp = toTimestamp(this.dateTime); //轉成timestamp
@@ -31,25 +35,15 @@ class TimeAgo{
     let timeago = '';
 
     if(timer <= 0 || Math.floor(timer/60) <= 0) {
-
       timeago = now;
-
     }else if(timer < 3600){
-
-      timeago = `${Math.round(timer/60)}${min}`;
-
+      timeago = this.getTimeAgoString(Math.round(timer/60), min);
     }else if( timer >= 3600 && Math.round(timer/3600)< 24 ){
-
-      timeago = `${Math.round(timer/3600)}${hour}`;
-
+      timeago = this.getTimeAgoString(Math.round(timer/3600), hour) 
     }else if(timer/86400 <=31){
-
-      timeago = `${Math.round(timer/86400)}${day}`;
-
+      timeago = this.getTimeAgoString(Math.round(timer/86400), day) 
     }else{
-      
       timeago = getNowString(timestamp);
-      
     }
     
     return {

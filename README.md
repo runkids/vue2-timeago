@@ -1,5 +1,5 @@
 # vue2-timeago 
-[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/) [![npm](https://img.shields.io/npm/v/vue2-timeago.svg)](https://www.npmjs.com/package/vue2-timeago) [![npm](https://img.shields.io/npm/l/vue2-timeago.svg)](https://github.com/runkids/vue2-timeago/blob/master/LICENSE)
+[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/) [![npm](https://img.shields.io/npm/v/vue2-timeago.svg)](https://www.npmjs.com/package/vue2-timeago)  [![npm](https://img.shields.io/npm/dt/vue2-timeago.svg)](https://www.npmjs.com/package/vue2-timeago) [![](https://data.jsdelivr.com/v1/package/npm/vue2-timeago/badge)](https://www.jsdelivr.com/package/npm/vue2-timeago) [![npm](https://img.shields.io/npm/l/vue2-timeago.svg)](https://github.com/runkids/vue2-timeago/blob/master/LICENSE)
 
 - Localization supported
 - Show tooltip 
@@ -49,6 +49,7 @@ export default {
 ```
 
 ##### With Default CSS 
+###### You don't need include for version <= "1.2.0"
 ```js
 import 'vue2-timeago/dist/vue2-timeago.css'
 ```
@@ -104,10 +105,13 @@ export default {
 ```
 
 #####  4. tooltip
-<img src="https://i.imgur.com/mRMt7Ps.png"/>
+<img src="https://imgur.com/UAYxE4U.png"/>
+
+- Base on [element](https://element.eleme.cn/#/en-US/component/tooltip "element"), you can use placement attribute that are allowed in element - tooltip.
 
 ```html
 <time-ago tooltip></time-ago> Show tooltip 
+<time-ago tooltip="right"></time-ago> Set placement
 ```
 
 #####  5. long
@@ -125,7 +129,7 @@ You can do something when time refresh every time
 ```
 #####  7. native event
 ```html
-<time-ago @click.native="todo"></>
+<time-ago @click.native="todo"><time-ago/>
 ```
 ## Props
 
@@ -147,3 +151,7 @@ locale support list :
 - 繁體中文 ( zh_TW ) 
 - 简体中文 ( zh_CN )
 - 日本語 ( jp )
+- Portugal(Brazil) ( pt_BR ) 
+- Spain ( es )
+- Arabia ( ar )
+- French ( fr )
