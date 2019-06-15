@@ -29,10 +29,10 @@ npm i vue2-timeago
 ```js
 yarn add vue2-timeago
 ```
-or just include [vue2-timeago.js](https://cdn.jsdelivr.net/npm/vue2-timeago@1.1.3/dist/vue2-timeago.min.js) to your view like 
+or just include [vue2-timeago.js](https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.1/dist/vue2-timeago.js) to your view like 
 
 ```js
-<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@1.1.3/dist/vue2-timeago.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.1/dist/vue2-timeago.js'></script>
 ```
 
 ## Usage
@@ -139,7 +139,7 @@ You can do something when time refresh every time
 | locale  |  String  |  en    | message language |
 | refresh  |  Boolean, Number  |  false    | The period to update the component, in seconds. When true it will be 60s. Also you can bind a number.|
 | long  |  Boolean  |  false    | Show long string with time message . ex. 3h -> 3 hours age|
-| tooltip  |  Boolean  |  false    | Show tooltip.|
+| tooltip  |  Boolean, String  |  false    | Show tooltip.|
 | todo  |  Function  |  false    | You can call a function when time refresh every time.|
 
 ## Contributions

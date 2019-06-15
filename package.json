@@ -1,8 +1,8 @@
 {
   "name": "vue2-timeago",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A vue component used to format date with time ago statement.",
-  "main": "dist/vue2-timeago.js",
+  "main": "dist/vue2-timeago.esm.js",
   "module": "dist/vue2-timeago.esm.js",
   "browser": "dist/vue2-timeago.js",
   "unpkg": "dist/vue2-timeago.js",
