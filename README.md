@@ -29,10 +29,10 @@ npm i vue2-timeago
 ```js
 yarn add vue2-timeago
 ```
-or just include [vue2-timeago.js](https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.0/dist/vue2-timeago.js) to your view like 
+or just include [vue2-timeago.js](https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.2/dist/vue2-timeago.js) to your view like 
 
 ```js
-<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.0/dist/vue2-timeago.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.2/dist/vue2-timeago.js'></script>
 ```
 
 ## Usage
@@ -49,7 +49,7 @@ export default {
 ```
 
 ##### With Default CSS 
-###### You don't need include for version <= "1.2.0"
+###### You don't need include for version >= "1.2.2"
 ```js
 import 'vue2-timeago/dist/vue2-timeago.css'
 ```
@@ -151,7 +151,25 @@ locale support list :
 - 繁體中文 ( zh_TW ) 
 - 简体中文 ( zh_CN )
 - 日本語 ( jp )
-- Portugal(Brazil) ( pt_BR ) 
+- Portugal(Brazil) ( pt_BR )
 - Spain ( es )
 - Arabia ( ar )
 - French ( fr )
+
+Thanks for help:
+
+<a href="https://github.com/flromano">
+  <img src="https://avatars1.githubusercontent.com/u/8169566?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/NathanFallet">
+  <img src="https://avatars2.githubusercontent.com/u/30439790?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/waltergammarota">
+  <img src="https://avatars0.githubusercontent.com/u/3790610?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/Mohammad-Ha">
+  <img src="https://avatars0.githubusercontent.com/u/15388052?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
