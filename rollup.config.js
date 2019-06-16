@@ -2,6 +2,7 @@ import vue from 'rollup-plugin-vue';
 import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 import { terser } from "rollup-plugin-terser";
+import resolve from 'rollup-plugin-node-resolve';
 
 export default [
   {
@@ -14,19 +15,11 @@ export default [
       terser(),
       commonjs(),
       vue(),
+      resolve(),
       babel({
         exclude: 'node_modules/**',
         babelrc: false,
         presets: [["@babel/preset-env", { modules: false }]],
-        plugins: [
-          [
-            "component",
-            {
-              libraryName: "element-ui",
-              styleLibraryName: "theme-chalk"
-            }
-          ]
-        ]
       })
     ]
   },
@@ -40,19 +33,11 @@ export default [
       terser(),
       commonjs(),
       vue(),
+      resolve(),
       babel({
         exclude: 'node_modules/**',
         babelrc: false,
         presets: [["@babel/preset-env", { modules: false }]],
-        plugins: [
-          [
-            "component",
-            {
-              libraryName: "element-ui",
-              styleLibraryName: "theme-chalk"
-            }
-          ]
-        ]
       })
     ]
   }

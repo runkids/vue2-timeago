@@ -29,10 +29,10 @@ npm i vue2-timeago
 ```js
 yarn add vue2-timeago
 ```
-or just include [vue2-timeago.js](https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.1/dist/vue2-timeago.js) to your view like 
+or just include [vue2-timeago.js](https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.0/dist/vue2-timeago.js) to your view like 
 
 ```js
-<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.1/dist/vue2-timeago.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.0/dist/vue2-timeago.js'></script>
 ```
 
 ## Usage
@@ -107,7 +107,7 @@ export default {
 #####  4. tooltip
 <img src="https://imgur.com/UAYxE4U.png"/>
 
-- Base on [element](https://element.eleme.cn/#/en-US/component/tooltip "element"), you can use placement attribute that are allowed in element - tooltip.
+- Base on [v-tooltip](https://github.com/Akryum/v-tooltip "v-tooltip"), you can use placement attribute that are allowed in v-tooltip.
 
 ```html
 <time-ago tooltip></time-ago> Show tooltip 
