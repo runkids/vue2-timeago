@@ -37,10 +37,10 @@ npm i vue2-timeago
 ```js
 yarn add vue2-timeago
 ```
-or just include [vue2-timeago.js](https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.2/dist/vue2-timeago.js) to your view like 
+or just include [vue2-timeago.js](https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.3/dist/vue2-timeago.js) to your view like 
 
 ```js
-<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.2/dist/vue2-timeago.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.3/dist/vue2-timeago.js'></script>
 ```
 
 ## Usage
