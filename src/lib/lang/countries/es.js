@@ -1,5 +1,5 @@
 function formatToLongString (time, type) {
-  return ` ${time} ${type}${ time > 1 ? 's' : ''} atras`
+  return ` ${time} ${type}${ time > 1 ? 's' : ''} atrás`
 }
 
 export default {
