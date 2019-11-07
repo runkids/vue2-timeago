@@ -164,6 +164,7 @@ locale support list :
 - Arabia ( ar )
 - French ( fr )
 - Polish ( pl )
+- Turkish ( tr )
 
 Thanks for help:
 
