@@ -6,6 +6,8 @@ import es from './countries/es'
 import pt_BR from './countries/pt_BR';
 import ar from './countries/ar';
 import fr from './countries/fr';
+import pl from './countries/pl';
+import tr from './countries/tr';
 
 export default{
   zh_TW,
@@ -16,4 +18,6 @@ export default{
   es, // Spain 西班牙文
   ar, // Arabia 阿拉伯文
   fr, // French 
+  pl, // Polish 波蘭語
+  tr, // Turkish 土耳其
 }

@@ -18,6 +18,14 @@
   -  1 day ~ 1 month( 31 days ) , show `** days ago`
   -  more than 1 month( 31 days ) , show `yyyy-mm-dd hh:mm`
 
+## Navigation
+- [Changelog](https://github.com/runkids/vue2-timeago/blob/master/CHANGELOG.md)
+- [Installation](##Installation)
+- [Usage](##Usage)
+- [Examples](##Examples)
+- [Props](##Props)
+- [Contributions](##Contributions)
+
 ## Live Demo
 [![Edit vue2_timeago_demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/embed/myomwvkojj)
 
@@ -155,6 +163,7 @@ locale support list :
 - Spain ( es )
 - Arabia ( ar )
 - French ( fr )
+- Polish ( pl )
 
 Thanks for help:
 
@@ -172,4 +181,16 @@ Thanks for help:
 
 <a href="https://github.com/Mohammad-Ha">
   <img src="https://avatars0.githubusercontent.com/u/15388052?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/netvistor">
+  <img src="https://avatars1.githubusercontent.com/u/26851628?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/aliemretaskin">
+  <img src="https://avatars0.githubusercontent.com/u/12280383?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/Nisgrak">
+  <img src="https://avatars3.githubusercontent.com/u/19597708?s=460&v=4" width="30" style="border-radius: 100%;"/>
 </a>
