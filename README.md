@@ -1,4 +1,7 @@
 # vue2-timeago 
+### Use Composition Api
+👉 [vue-compose-timeago](https://github.com/runkids/vue-compose-timeago)
+
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/) [![npm](https://img.shields.io/npm/v/vue2-timeago.svg)](https://www.npmjs.com/package/vue2-timeago)  [![npm](https://img.shields.io/npm/dt/vue2-timeago.svg)](https://www.npmjs.com/package/vue2-timeago) [![](https://data.jsdelivr.com/v1/package/npm/vue2-timeago/badge)](https://www.jsdelivr.com/package/npm/vue2-timeago) [![npm](https://img.shields.io/npm/l/vue2-timeago.svg)](https://github.com/runkids/vue2-timeago/blob/master/LICENSE)
 
 - Localization supported
@@ -16,7 +19,7 @@
   -  1 minute ~ 1 hour , show `** minutes ago`
   -  1 hour ~ 1 day , show `** hours ago`
   -  1 day ~ 1 month( 31 days ) , show `** days ago`
-  -  more than 1 month( 31 days ) , show `yyyy-mm-dd hh:mm`
+  -  more than 1 month( 31 days ) , show `yyyy-mm-dd hh:mm` 
 
 ## Navigation
 - [Changelog](https://github.com/runkids/vue2-timeago/blob/master/CHANGELOG.md)
