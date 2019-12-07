@@ -11,7 +11,7 @@ export default {
     day: 'hari',
   },
   long: {
-    now: 'just now',
+    now: 'baru saja',
     sec: time => formatToLongString(time, 'detik'),
     min: time => formatToLongString(time, 'menit'),
     hour: time => formatToLongString(time, 'jam'),
