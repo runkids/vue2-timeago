@@ -1,0 +1,20 @@
+function formatToLongString (time, type) {
+  return ` ${time} ${type}${ time > 1 ? 's' : ''} yg lalu`
+}
+
+export default {
+  short: {
+    now: 'baru saja',
+    sec:'dtk',
+    min: 'mnt',
+    hour: 'jam',
+    day: 'hari',
+  },
+  long: {
+    now: 'just now',
+    sec: time => formatToLongString(time, 'detik'),
+    min: time => formatToLongString(time, 'menit'),
+    hour: time => formatToLongString(time, 'jam'),
+    day: time => formatToLongString(time, 'hari'),
+  }
+}
