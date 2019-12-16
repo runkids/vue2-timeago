@@ -5,10 +5,10 @@ function formatToLongString (time, type) {
 export default {
   short: {
     now: 'baru saja',
-    sec:'dtk',
-    min: 'mnt',
-    hour: 'jam',
-    day: 'hari',
+    sec:'d',
+    min: 'm',
+    hour: 'j',
+    day: 'h',
   },
   long: {
     now: 'baru saja',
