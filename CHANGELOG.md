@@ -1,3 +1,7 @@
+# 1.2.5
+
+- Modify build setting.
+
 # 1.2.4
 
 - Indonesian translation [#18](https://github.com/runkids/vue2-timeago/pull/18).
