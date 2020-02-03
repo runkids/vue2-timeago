@@ -1,7 +1,9 @@
 <template>
   <span>
-    <span class="v-time-ago__text" v-if="tooltip" v-tooltip="options">{{timeago}}</span>
-    <span class="v-time-ago__text" v-else>{{timeago}}</span>
+    <slot name="tooltip" :timeage="timeago">
+      <span class="v-time-ago__text" v-if="tooltip" v-tooltip="options">{{timeago}}</span>
+      <span class="v-time-ago__text" v-else>{{timeago}}</span>
+    </slot>
   </span>
 </template>
 
