@@ -1,5 +1,6 @@
 import vue from 'rollup-plugin-vue';
 import commonjs from 'rollup-plugin-commonjs';
+import postcss from 'rollup-plugin-postcss'
 import babel from 'rollup-plugin-babel';
 import { terser } from "rollup-plugin-terser";
 import resolve from 'rollup-plugin-node-resolve';
@@ -16,6 +17,10 @@ export default [
       commonjs(),
       vue(),
       resolve(),
+      postcss({
+        minimize: true,
+        extract: true
+      }),
       babel({
         exclude: 'node_modules/**',
         babelrc: false,
@@ -34,6 +39,10 @@ export default [
       commonjs(),
       vue(),
       resolve(),
+      postcss({
+        minimize: true,
+        extract: true
+      }),
       babel({
         exclude: 'node_modules/**',
         babelrc: false,
