@@ -168,6 +168,7 @@ locale support list :
 - French ( fr )
 - Polish ( pl )
 - Turkish ( tr )
+- Indonesian ( Id )
 
 Thanks for help:
 
@@ -197,4 +198,8 @@ Thanks for help:
 
 <a href="https://github.com/Nisgrak">
   <img src="https://avatars3.githubusercontent.com/u/19597708?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/yunanhelmy">
+  <img src="https://avatars0.githubusercontent.com/u/5515897?s=460&v=4" width="30" style="border-radius: 100%;"/>
 </a>

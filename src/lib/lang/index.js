@@ -21,5 +21,5 @@ export default{
   fr, // French
   pl, // Polish 波蘭語
   tr, // Turkish 土耳其
-  id,
+  id, // Indonesian 印度尼西雅
 }

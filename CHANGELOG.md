@@ -1,3 +1,7 @@
+# 1.2.4
+
+- Indonesian translation [#18](https://github.com/runkids/vue2-timeago/pull/18).
+
 # 1.2.3
 
 - Turkish translation [#15](https://github.com/runkids/vue2-timeago/pull/15).
