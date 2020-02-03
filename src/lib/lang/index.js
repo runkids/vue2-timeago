@@ -9,6 +9,8 @@ import fr from './countries/fr';
 import pl from './countries/pl';
 import tr from './countries/tr';
 import id from './countries/id';
+import ro from './countries/ro';
+import ru from './countries/ru';
 
 export default{
   zh_TW,
@@ -21,5 +23,7 @@ export default{
   fr, // French
   pl, // Polish 波蘭語
   tr, // Turkish 土耳其
-  id, // Indonesian 印度尼西雅
+  id, // Indonesian 印度尼西雅,
+  ro, // Romanian
+  ru, // Russian
 }

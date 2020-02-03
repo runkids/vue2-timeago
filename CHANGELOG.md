@@ -1,3 +1,8 @@
+# 1.2.6
+
+- Romanian translation [#17](https://github.com/runkids/vue2-timeago/issues/17).
+- Russian translation [#16](https://github.com/runkids/vue2-timeago/issues/16).
+
 # 1.2.5
 
 - Modify build setting.

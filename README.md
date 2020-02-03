@@ -157,9 +157,9 @@ You can do something when time refresh every time
 locale translations: The component needs more locale translations. You can `Open an issue to write the locale translations, or submit a pull request`. 
 See example [here](https://github.com/runkids/vue2-timeago/blob/master/src/lib/lang).
 
-locale support list : 
-- English ( en )  
-- 繁體中文 ( zh_TW ) 
+locale support list :
+- English ( en )
+- 繁體中文 ( zh_TW )
 - 简体中文 ( zh_CN )
 - 日本語 ( jp )
 - Portugal(Brazil) ( pt_BR )
@@ -168,7 +168,9 @@ locale support list :
 - French ( fr )
 - Polish ( pl )
 - Turkish ( tr )
-- Indonesian ( Id )
+- Indonesian ( id )
+- Romanian (ro)
+- Russian (ru)
 
 Thanks for help:
 
@@ -202,4 +204,8 @@ Thanks for help:
 
 <a href="https://github.com/yunanhelmy">
   <img src="https://avatars0.githubusercontent.com/u/5515897?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/wdarins">
+  <img src="https://avatars2.githubusercontent.com/u/40423022?s=460&v=4" width="30" style="border-radius: 100%;"/>
 </a>
