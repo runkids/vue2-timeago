@@ -1,3 +1,7 @@
+# 1.2.7
+
+- Germany translation [#17](https://github.com/runkids/vue2-timeago/pull/19).
+
 # 1.2.6
 
 - Romanian translation [#17](https://github.com/runkids/vue2-timeago/issues/17).

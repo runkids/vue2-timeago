@@ -169,8 +169,9 @@ locale support list :
 - Polish ( pl )
 - Turkish ( tr )
 - Indonesian ( id )
-- Romanian (ro)
-- Russian (ru)
+- Romanian ( ro )
+- Russian ( ru )
+- Germany ( de )
 
 Thanks for help:
 
@@ -208,4 +209,8 @@ Thanks for help:
 
 <a href="https://github.com/wdarins">
   <img src="https://avatars2.githubusercontent.com/u/40423022?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/jpunz">
+  <img src="https://avatars2.githubusercontent.com/u/12137220?s=400&u=acfacd96e9cc4a39533f8d5061232ff20880a3c3&v=4" width="30" style="border-radius: 100%;"/>
 </a>
