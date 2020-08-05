@@ -29,5 +29,5 @@ export default{
   ro, // Romanian
   ru, // Russian
   de, 
-  uk, // Ukrainian
+  uk, // Ukrainian 烏克蘭語
 }

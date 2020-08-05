@@ -172,6 +172,7 @@ locale support list :
 - Romanian ( ro )
 - Russian ( ru )
 - Germany ( de )
+- Ukrainian ( uk )
 
 Thanks for help:
 
@@ -213,4 +214,8 @@ Thanks for help:
 
 <a href="https://github.com/jpunz">
   <img src="https://avatars2.githubusercontent.com/u/12137220?s=400&u=acfacd96e9cc4a39533f8d5061232ff20880a3c3&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/alarm3d">
+  <img src="https://avatars0.githubusercontent.com/u/15848856?s=460&u=a51026b2eafc910d050dde97a2fb48896aaa62cb&v=4" width="30" style="border-radius: 100%;"/>
 </a>
