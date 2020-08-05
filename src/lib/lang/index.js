@@ -12,6 +12,7 @@ import id from './countries/id';
 import ro from './countries/ro';
 import ru from './countries/ru';
 import de from './countries/de';
+import uk from './countries/uk';
 
 export default{
   zh_TW,
@@ -28,4 +29,5 @@ export default{
   ro, // Romanian
   ru, // Russian
   de, 
+  uk, // Ukrainian
 }
