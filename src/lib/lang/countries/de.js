@@ -1,5 +1,5 @@
 function formatToLongString (time, type) {
-  return `vor ${time} ${type}${ time > 1 ? 's' : ''}`
+  return `vor ${time} ${type}${ time > 1 ? type === 'Tag' ? 'en' : 'n' : ''}`
 }
 
 export default {
