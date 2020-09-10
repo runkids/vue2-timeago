@@ -1,3 +1,7 @@
+# 1.2.9
+
+- Modify Germany translation [#19](https://github.com/runkids/vue2-timeago/pull/22).
+
 # 1.2.8
 
 - Ukrainian translation [#19](https://github.com/runkids/vue2-timeago/pull/21).

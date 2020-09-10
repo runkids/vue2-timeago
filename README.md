@@ -1,6 +1,4 @@
 # vue2-timeago 
-### Use Composition Api
-👉 [vue-compose-timeago](https://github.com/runkids/vue-compose-timeago)
 
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/) [![npm](https://img.shields.io/npm/v/vue2-timeago.svg)](https://www.npmjs.com/package/vue2-timeago)  [![npm](https://img.shields.io/npm/dt/vue2-timeago.svg)](https://www.npmjs.com/package/vue2-timeago) [![](https://data.jsdelivr.com/v1/package/npm/vue2-timeago/badge)](https://www.jsdelivr.com/package/npm/vue2-timeago) [![npm](https://img.shields.io/npm/l/vue2-timeago.svg)](https://github.com/runkids/vue2-timeago/blob/master/LICENSE)
 
@@ -218,4 +216,8 @@ Thanks for help:
 
 <a href="https://github.com/alarm3d">
   <img src="https://avatars0.githubusercontent.com/u/15848856?s=460&u=a51026b2eafc910d050dde97a2fb48896aaa62cb&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/mrvnklm">
+  <img src="https://avatars2.githubusercontent.com/u/24477241?s=460&v=4" width="30" style="border-radius: 100%;"/>
 </a>

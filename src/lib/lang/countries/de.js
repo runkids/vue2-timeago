@@ -5,7 +5,7 @@ function formatToLongString (time, type) {
 export default {
   short: {
     now: 'Gerade eben',
-    sec:'Sek.',
+    sec: 'Sek.',
     min: 'Min.',
     hour: 'Std.',
     day: 'Tg',
