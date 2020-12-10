@@ -13,6 +13,7 @@ import ro from './countries/ro';
 import ru from './countries/ru';
 import de from './countries/de';
 import uk from './countries/uk';
+import bg from './countries/bg';
 
 export default{
   zh_TW,
@@ -30,4 +31,5 @@ export default{
   ru, // Russian
   de, 
   uk, // Ukrainian 烏克蘭語
+  bg, // Bulgarian
 }

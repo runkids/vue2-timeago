@@ -171,6 +171,7 @@ locale support list :
 - Russian ( ru )
 - Germany ( de )
 - Ukrainian ( uk )
+- Bulgarian ( bg )
 
 Thanks for help:
 
@@ -220,4 +221,12 @@ Thanks for help:
 
 <a href="https://github.com/mrvnklm">
   <img src="https://avatars2.githubusercontent.com/u/24477241?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/wowar">
+  <img src="https://avatars0.githubusercontent.com/u/3638021?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/bvs92">
+  <img src="https://avatars1.githubusercontent.com/u/11878696?s=460&v=4" width="30" style="border-radius: 100%;"/>
 </a>

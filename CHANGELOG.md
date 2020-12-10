@@ -1,10 +1,16 @@
+# 1.2.10
+
+- Modify Romanian translation [#19](https://github.com/runkids/vue2-timeago/pull/24).
+
+- Add Bulgarian translation [#23](https://github.com/runkids/vue2-timeago/pull/23).
+
 # 1.2.9
 
-- Modify Germany translation [#19](https://github.com/runkids/vue2-timeago/pull/22).
+- Modify Germany translation [#22](https://github.com/runkids/vue2-timeago/pull/22).
 
 # 1.2.8
 
-- Ukrainian translation [#19](https://github.com/runkids/vue2-timeago/pull/21).
+- Ukrainian translation [#21](https://github.com/runkids/vue2-timeago/pull/21).
 
 # 1.2.7
 
