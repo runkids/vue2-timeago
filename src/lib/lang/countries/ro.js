@@ -1,6 +1,9 @@
 function formatToLongString (time, type) {
   if(type == 'zi') {
-    return ` ${time == 1 ? 'o ' : time} ${ time == 1 ? '' : 'e'} în urmă`
+    if(time == 1)
+      return 'o zi în urmă'
+    else 
+      return time + ' zile în urmă'
   }
   
   return ` ${time == 1 ? 'o ' : time} ${type}${ time == 1 ? 'ă' : 'e'} în urmă`
