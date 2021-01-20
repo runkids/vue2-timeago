@@ -42,6 +42,6 @@
     "webpack-bundle-analyzer": "^3.9.0"
   },
   "dependencies": {
-    "v-tooltip": "^2.0.2"
+    "v-tooltip": "^2.1.2"
   }
 }

@@ -33,21 +33,21 @@
 ## Installation 
 Get from npm / yarn:
 ```js
-npm i vue2-timeago
+npm i vue2-timeago@2.0.0-beta.0
 ```
 ```js
-yarn add vue2-timeago
+yarn add vue2-timeago@2.0.0-beta.0
 ```
-or just include [vue2-timeago.js](https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.3/dist/vue2-timeago.js) to your view like 
+or just include [vue2-timeago.umd.min.js](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.0-beta.0/dist/vue2-timeago.umd.min.js) to your view like 
 
 ```js
-<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@1.2.3/dist/vue2-timeago.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.0-beta.0/dist/vue2-timeago.umd.min.js'></script>
 ```
 
 ## Usage
 Use this inside your app:
 ``` js
-import TimeAgo from 'vue2-timeago'
+import { TimeAgo } from 'vue2-timeago'
 
 export default {
   name: 'app',
@@ -58,11 +58,10 @@ export default {
 ```
 
 ##### With Default CSS 
-###### You don't need include for version >= "1.2.2"
 ```js
 import 'vue2-timeago/dist/vue2-timeago.css'
 ```
-or just include [vue2-timeago.css](https://cdn.jsdelivr.net/npm/vue2-timeago@1.1.3/dist/vue2-timeago.css)
+or just include [vue2-timeago.css](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.0-beta.0/dist/vue2-timeago.css)
 
 
 ##### HTML
