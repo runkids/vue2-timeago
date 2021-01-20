@@ -43,17 +43,13 @@ export default {
   data(){
     return {
       timeago: '',
-
       nowString: '',
-
       intervalId: null,
     }
   },
-
   directives: {
     tooltip: VTooltip
   },
-
   computed: {
     options () {
       return {
@@ -62,7 +58,6 @@ export default {
       }
     }
   },
-
   methods:{
     reloadTime(){
       let { timeago , nowString } = timer(this.datetime, this.locale, this.long?'long':'short' );
@@ -71,7 +66,6 @@ export default {
       if(this.intervalId) this.todo();
     }
   },
-
   mounted(){
     this.$nextTick(()=>{
       this.reloadTime();
@@ -81,11 +75,9 @@ export default {
       }
     });
   },
-
   destroyed() {
      if(this.intervalId) clearInterval(this.intervalId);
   },
-  
 }
 </script>
 

@@ -1,3 +1,6 @@
+# 1.2.11
+- Turkish translation is improved [#25](https://github.com/runkids/vue2-timeago/pull/25).
+
 # 1.2.10
 
 - Modify Romanian translation [#19](https://github.com/runkids/vue2-timeago/pull/24).
