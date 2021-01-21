@@ -67,7 +67,7 @@ export default {
     timerConfig() {
       return {
         locale: this.locale,
-        long: this.long ? 'long' : 'short',
+        type: this.long ? 'long' : 'short',
       }
     },
   },

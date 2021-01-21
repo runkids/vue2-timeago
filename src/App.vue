@@ -48,12 +48,7 @@
 </template>
 
 <script>
-import { TimeAgo } from './components/index'
-
 export default {
-  components: {
-    TimeAgo,
-  },
   data() {
     return {
       value: new Date(),
