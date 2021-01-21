@@ -1,3 +1,7 @@
+# 1.2.12
+
+- Fixed refresh setting bug
+
 # 1.2.11
 
 - Turkish translation is improved [#25](https://github.com/runkids/vue2-timeago/pull/25).
