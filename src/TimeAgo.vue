@@ -32,7 +32,7 @@ export default {
     },
     todo:{ 
       type: Function,
-       default: e => {},
+      default: e => {},
     },
     tooltip:{
       type: [String, Boolean],
@@ -71,12 +71,12 @@ export default {
       this.reloadTime();
       if(this.refresh){
         const refreshTime = this.refresh===true ? 60 : this.refresh
-        this.intervalId = setInterval(this.reloadTime, this.refresh*1000);
+        this.intervalId = setInterval(this.reloadTime, this.refreshTime * 1000);
       }
     });
   },
   destroyed() {
-     if(this.intervalId) clearInterval(this.intervalId);
+    if(this.intervalId) clearInterval(this.intervalId);
   },
 }
 </script>
