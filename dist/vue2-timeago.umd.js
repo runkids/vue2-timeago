@@ -1,4 +1,4 @@
-/*! vue2-timeago - 2.0.0-beta.0 | (c) 2018, 2021  runkids <egg358358@gmail.com> | https://github.com/runkids/vue2-timeago */
+/*! vue2-timeago - 2.0.0-beta.1 | (c) 2018, 2021  runkids <egg358358@gmail.com> | https://github.com/runkids/vue2-timeago */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -3708,7 +3708,7 @@ module.exports = MapCache;
 
 "use strict";
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e4c00858-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/TimeAgo.vue?vue&type=template&id=5260fcd0&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"5b386382-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/TimeAgo.vue?vue&type=template&id=5260fcd0&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',_vm._g({staticClass:"v-timeago"},_vm.eventListeners),[_vm._t("tooltip",[(_vm.tooltip)?_c('span',{directives:[{name:"tooltip",rawName:"v-tooltip",value:(_vm.options),expression:"options"}]},[_vm._v(_vm._s(_vm.timeago))]):_c('span',[_vm._v(_vm._s(_vm.timeago))])],{"timeage":_vm.timeago})],2)}
 var staticRenderFns = []
 
