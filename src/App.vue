@@ -33,7 +33,16 @@
       </el-select>
     </div>
     <div class="timeago">
-      <time-ago :datetime="value" :locale="locale" :tooltip="tooltip" :long="longString" refresh />
+      <time-ago
+        :datetime="value"
+        :locale="locale"
+        :tooltip="tooltip"
+        :tooltip-options="tooltipOptions"
+        :long="longString"
+        refresh
+        @update="timeRefresh"
+        @click="handleClick"
+      />
     </div>
   </div>
 </template>
@@ -55,6 +64,9 @@ export default {
       },
       longString: false,
       tooltip: true,
+      tooltipOptions: {
+        placement: 'top',
+      },
       locale: 'en',
       options: [
         { value: 'en', label: 'English (en)' },
@@ -75,6 +87,16 @@ export default {
         { value: 'bg', label: 'Bulgarian' },
       ],
     }
+  },
+  methods: {
+    timeRefresh({ timeago, nowString, timestamp }) {
+      console.log(timeago)
+      console.log(nowString)
+      console.log(timestamp)
+    },
+    handleClick() {
+      console.log('timeago has been clicked!')
+    },
   },
 }
 </script>

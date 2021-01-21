@@ -1,8 +1,8 @@
 <template>
-  <span>
+  <span class="v-timeago" v-on="eventListeners">
     <slot :timeage="timeago" name="tooltip">
-      <span v-tooltip="options" v-if="tooltip" class="v-time-ago__text">{{ timeago }}</span>
-      <span v-else class="v-time-ago__text">{{ timeago }}</span>
+      <span v-tooltip="options" v-if="tooltip">{{ timeago }}</span>
+      <span v-else>{{ timeago }}</span>
     </slot>
   </span>
 </template>
@@ -33,56 +33,83 @@ export default {
       type: Boolean,
       default: false,
     },
-    todo: {
-      type: Function,
-      default: () => {},
-    },
     tooltip: {
-      type: [String, Boolean],
+      type: Boolean,
       default: false,
     },
+    tooltipOptions: {
+      // more info see https://github.com/Akryum/v-tooltip#other-options
+      type: Object,
+      default: () => ({
+        placement: 'top',
+      }),
+    },
   },
-
   data() {
     return {
       timeago: '',
-      nowString: '',
-      intervalId: null,
+      datetimeString: '',
+      timer: null,
     }
   },
   computed: {
+    eventListeners() {
+      return {
+        ...this.$listeners,
+      }
+    },
     options() {
       return {
-        placement: typeof this.tooltip === 'string' ? this.tooltip : 'top',
-        content: this.nowString,
+        content: this.datetimeString,
+        ...this.tooltipOptions,
+      }
+    },
+    timerConfig() {
+      return {
+        locale: this.locale,
+        long: this.long ? 'long' : 'short',
       }
     },
   },
-  mounted() {
-    this.$nextTick(() => {
-      this.reloadTime()
-      if (this.refresh) {
-        // const refreshTime = this.refresh === true ? 60 : this.refresh
-        this.intervalId = setInterval(this.reloadTime, this.refresh * 1000)
-      }
-    })
+  watch: {
+    timerConfig: {
+      deep: true,
+      handler: 'reloadTime',
+    },
   },
-  destroyed() {
-    if (this.intervalId) clearInterval(this.intervalId)
+  mounted() {
+    this.createTimer()
+  },
+  beforeDestroy() {
+    this.clearTimer()
   },
   methods: {
+    createTimer() {
+      this.$nextTick(() => {
+        this.reloadTime()
+        if (this.refresh) {
+          const refreshTime = this.refresh === true ? 60 : this.refresh
+          this.timer = setInterval(this.reloadTime, refreshTime * 1000)
+        }
+      })
+    },
+    clearTimer() {
+      if (this.timer) clearInterval(this.timer)
+    },
     reloadTime() {
-      let { timeago, nowString } = timer(this.datetime, this.locale, this.long ? 'long' : 'short')
+      let { timeago, nowString, timestamp } = timer(this.datetime, this.timerConfig)
       this.timeago = timeago
-      this.nowString = nowString
-      if (this.intervalId) this.todo()
+      this.datetimeString = nowString
+      if (this.timer) {
+        this.$emit('update', { timeago, nowString, timestamp })
+      }
     },
   },
 }
 </script>
 
 <style>
-.v-time-ago__text {
+.v-timeago {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   cursor: pointer;

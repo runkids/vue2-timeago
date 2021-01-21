@@ -19,9 +19,6 @@ module.exports = {
       library: 'TimeAgo',
       libraryExport: 'default',
     },
-    externals: {
-      'v-tooltip': 'v-tooltip',
-    },
     plugins: [new webpack.BannerPlugin(banner)],
   },
   css: {
