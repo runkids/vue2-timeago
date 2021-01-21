@@ -26,15 +26,22 @@
 ## Navigation
 
 - [Changelog](https://github.com/runkids/vue2-timeago/blob/master/CHANGELOG.md)
-- [Installation](##Installation)
-- [Usage](##Usage)
-- [Examples](##Examples)
-- [Props](##Props)
-- [Contributions](##Contributions)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Examples](#Examples)
+- [Props](#Props)
+- [Contributions](#Contributions)
 
 ## Live Demo
 
 [![Edit vue2_timeago_demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/embed/myomwvkojj)
+
+## Local Demo
+
+```js
+yarn
+yarn serve
+```
 
 ## Installation
 
