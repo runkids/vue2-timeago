@@ -19,9 +19,6 @@ module.exports = {
   lintOnSave: true,
   configureWebpack: {
     mode: 'production',
-    externals: {
-      'v-tooltip': 'v-tooltip'
-    },
     performance: {
       hints:false
     },
