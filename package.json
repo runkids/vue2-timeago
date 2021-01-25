@@ -1,6 +1,6 @@
 {
   "name": "vue2-timeago",
-  "version": "2.0.0-beta.2",
+  "version": "2.0.0-beta.3",
   "description": "A vue component used to format date with time ago statement.",
   "main": "dist/vue2-timeago.common.js",
   "unpkg": "dist/vue2-timeago.umd.min.js",
@@ -25,23 +25,31 @@
     "lint": "vue-cli-service lint"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.1",
-    "@vue/cli-plugin-eslint": "^3.4.1",
-    "@vue/cli-service": "^3.4.1",
-    "@vue/eslint-config-standard": "^3.0.5",
-    "babel-plugin-transform-flow-comments": "^6.7.0",
+    "@vue/cli-plugin-babel": "^4.5.11",
+    "@vue/cli-plugin-eslint": "^4.5.11",
+    "@vue/cli-service": "^4.5.11",
+    "@vue/eslint-config-standard": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-flow-comments": "^6.22.0",
+    "core-js": "^3.8.3",
     "element-ui": "^2.15.0",
+    "eslint": "^7.18.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "node-sass": "^4.13.0",
+    "eslint-plugin-vue": "^7.5.0",
+    "node-sass": "^4.14.1",
     "prettier": "^2.2.1",
     "rimraf": "^2.6.2",
-    "sass-loader": "^7.0.1",
+    "sass-loader": "^10.1.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "vue": "^2.6.12",
     "vue-template-compiler": "^2.6.12",
-    "webpack-bundle-analyzer": "^3.9.0"
+    "webpack-bundle-analyzer": "^4.4.0"
   },
   "dependencies": {
+    "v-tooltip": "^2.1.2"
+  },
+  "peerDependencies": {
     "v-tooltip": "^2.1.2"
   }
 }

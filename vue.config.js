@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const PACKAGE = require('./package.json')
 
 const banner =
@@ -14,14 +15,26 @@ const banner =
   PACKAGE.homepage
 
 module.exports = {
+  productionSourceMap: false,
+  lintOnSave: true,
   configureWebpack: {
+    mode: 'production',
+    externals: {
+      'v-tooltip': 'v-tooltip'
+    },
+    performance: {
+      hints:false
+    },
     output: {
       library: 'TimeAgo',
       libraryExport: 'default',
     },
-    plugins: [new webpack.BannerPlugin(banner)],
+    plugins: [
+      new webpack.BannerPlugin(banner),
+      new UglifyJsPlugin()
+    ]
   },
   css: {
     extract: true,
-  },
+  }
 }
