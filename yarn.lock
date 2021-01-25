@@ -8901,6 +8901,14 @@ vue2-timeago@2.0.0-beta.4:
     v-tooltip "^2.1.2"
     vue2-timeago "2.0.0-beta.3"
 
+vue2-timeago@2.0.0-beta.5:
+  version "2.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/vue2-timeago/-/vue2-timeago-2.0.0-beta.5.tgz#a946278cb30d3abea8143061275c054fc9229040"
+  integrity sha512-WVjddNI2vgt6DBGXqAOZsP/P0HPRMAYAQuHv2cQ6MIACaXzH1JyPmTi9ETAtD4GaEm+1ytGFL2IP00e+2jl3Vg==
+  dependencies:
+    v-tooltip "^2.1.2"
+    vue2-timeago "2.0.0-beta.4"
+
 vue@^2.6.12:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"

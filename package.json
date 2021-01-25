@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "v-tooltip": "^2.1.2",
-    "vue2-timeago": "2.0.0-beta.4"
+    "vue2-timeago": "2.0.0-beta.5"
   },
   "peerDependencies": {
     "v-tooltip": "^2.1.2"
