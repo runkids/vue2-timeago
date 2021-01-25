@@ -1,7 +1,7 @@
 <template>
   <span class="v-timeago" v-on="eventListeners">
     <slot :timeage="timeago" name="tooltip">
-      <span v-tooltip="options" v-if="tooltip">{{ timeago }}</span>
+      <span v-if="tooltip" v-tooltip="options">{{ timeago }}</span>
       <span v-else>{{ timeago }}</span>
     </slot>
   </span>
