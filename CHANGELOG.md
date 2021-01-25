@@ -1,3 +1,7 @@
+# 2.0.0-beta.3
+
+- Modify build setting
+
 # 2.0.0-beta.2
 
 - Fix long string bug
