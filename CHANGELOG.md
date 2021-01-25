@@ -1,3 +1,6 @@
+# 2.0.0-beta.5
+
+- Refresh timer after datetime changed 
 # 2.0.0-beta.4
 
 - Fix tooltip bug

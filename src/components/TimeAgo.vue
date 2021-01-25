@@ -76,6 +76,10 @@ export default {
       deep: true,
       handler: 'reloadTime',
     },
+    datetime: {
+      deep: true,
+      handler: 'reloadTime',
+    },
   },
   mounted() {
     this.createTimer()
