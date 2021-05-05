@@ -14,6 +14,7 @@ import ru from './countries/ru'
 import de from './countries/de'
 import uk from './countries/uk'
 import bg from './countries/bg'
+import se from './countries/se'
 
 export default {
   zh_TW,
@@ -32,4 +33,5 @@ export default {
   de,
   uk, // Ukrainian 烏克蘭語
   bg, // Bulgarian
+  se, // Swedish
 }
