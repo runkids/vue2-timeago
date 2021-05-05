@@ -257,6 +257,7 @@ locale support list :
 - Germany ( de )
 - Ukrainian ( uk )
 - Bulgarian ( bg )
+- Swedish ( se )
 
 Thanks for help:
 
@@ -318,4 +319,8 @@ Thanks for help:
 
 <a href="https://github.com/ogunbaysal">
   <img src="https://avatars1.githubusercontent.com/u/33205381?s=460&u=422803b5e2e86741b2431d9adb13402b2e0ffbcb&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/martlind">
+  <img src="https://avatars.githubusercontent.com/u/1938955?v=4" width="30" style="border-radius: 100%;"/>
 </a>
