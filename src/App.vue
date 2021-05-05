@@ -80,6 +80,7 @@ export default {
         { value: 'de', label: 'Germany' },
         { value: 'uk', label: 'Ukrainian' },
         { value: 'bg', label: 'Bulgarian' },
+        { value: 'se', label: 'Swedish' },
       ],
     }
   },
