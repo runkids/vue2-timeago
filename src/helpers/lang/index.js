@@ -15,6 +15,7 @@ import de from './countries/de'
 import uk from './countries/uk'
 import bg from './countries/bg'
 import se from './countries/se'
+import nl from './countries/nl'
 
 export default {
   zh_TW,
@@ -30,8 +31,9 @@ export default {
   id, // Indonesian 印度尼西雅,
   ro, // Romanian
   ru, // Russian
-  de,
+  de, // German
   uk, // Ukrainian 烏克蘭語
   bg, // Bulgarian
   se, // Swedish
+  nl, // Dutch / Netherlands
 }
