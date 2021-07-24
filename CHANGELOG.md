@@ -1,3 +1,7 @@
+# 2.0.1
+
+- Add Dutch / Netherlands translation [#33](https://github.com/runkids/vue2-timeago/pull/33).
+
 # 2.0.0
 
 - Release 2.0.0
