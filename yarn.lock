@@ -8970,13 +8970,13 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue2-timeago@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/vue2-timeago/-/vue2-timeago-2.0.0.tgz#ee04e163705cb5b983acdc11f4a9723dd768a260"
-  integrity sha512-TNBuBR4h3+EZirwkqLp+3PPdBtrEs60p92Rhjapl/lvYsXQZN82szGkbA+ZT47AtAfJ6KUWYtZCfGt/UdIDtMQ==
+vue2-timeago@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/vue2-timeago/-/vue2-timeago-2.0.1.tgz#49cda338b69027b8464c73bc38c1e38ebc19cbea"
+  integrity sha512-OmU1ZC9UEhPJO5LGRfB3m1HL19//IAe3A2R0BaIQT/Fz6cBZbHfCTMNQlASHRCBxnSJzVTlWw12o0Li16EXzhQ==
   dependencies:
     v-tooltip "^2.1.2"
-    vue2-timeago "2.0.0"
+    vue2-timeago "2.0.1"
 
 vue@^2.6.12:
   version "2.6.14"
