@@ -234,6 +234,39 @@ methods: {
 | ------------ | ------------ |
 | update | After timer refreshed will trigger this event |
 
+## Nuxt (global registration)
+
+To install in nuxt run
+
+```
+npm i vue2-timeago
+```
+
+In `nuxt.config.js` add
+
+```
+  plugins: [
+    { src: '~/plugins/vue2-timeago' }
+  ],
+```
+
+In `plugins/vue2-timeago.js` type:
+
+```
+import Vue from 'vue';
+import { TimeAgo } from 'vue2-timeago';
+
+import 'vue2-timeago/dist/vue2-timeago.css';
+
+Vue.component('time-ago', TimeAgo);
+```
+
+Then in components use as:
+
+```
+<time-ago :datetime="new Date()" tooltip/>
+```
+
 ## Contributions
 
 locale translations: The component needs more locale translations. You can `Open an issue to write the locale translations, or submit a pull request`.
