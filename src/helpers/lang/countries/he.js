@@ -16,5 +16,5 @@ export default {
     min: (time) => formatToLongString(time, 'דַקָה'),
     hour: (time) => formatToLongString(time, 'שָׁעָה'),
     day: (time) => formatToLongString(time, 'יְוֹם'),
-  }
+  },
 }

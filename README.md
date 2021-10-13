@@ -48,17 +48,17 @@ yarn serve
 Get from npm / yarn:
 
 ```js
-npm i vue2-timeago@2.0.1
+npm i vue2-timeago@2.0.2
 ```
 
 ```js
-yarn add vue2-timeago@2.0.1
+yarn add vue2-timeago@2.0.2
 ```
 
-or just include [vue2-timeago.umd.min.js](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.1/dist/vue2-timeago.umd.min.js) to your view like
+or just include [vue2-timeago.umd.min.js](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.2/dist/vue2-timeago.umd.min.js) to your view like
 
 ```js
-<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.1/dist/vue2-timeago.umd.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.2/dist/vue2-timeago.umd.min.js'></script>
 ```
 
 ## Usage
@@ -82,7 +82,7 @@ export default {
 import 'vue2-timeago/dist/vue2-timeago.css'
 ```
 
-or just include [vue2-timeago.css](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.1/dist/vue2-timeago.css)
+or just include [vue2-timeago.css](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.2/dist/vue2-timeago.css)
 
 ##### HTML
 
@@ -238,13 +238,13 @@ methods: {
 
 To install in nuxt run
 
-```
+```shell
 npm i vue2-timeago
 ```
 
 In `nuxt.config.js` add
 
-```
+```javascript
   plugins: [
     { src: '~/plugins/vue2-timeago' }
   ],
@@ -252,7 +252,7 @@ In `nuxt.config.js` add
 
 In `plugins/vue2-timeago.js` type:
 
-```
+```javascript
 import Vue from 'vue';
 import { TimeAgo } from 'vue2-timeago';
 
@@ -263,7 +263,7 @@ Vue.component('time-ago', TimeAgo);
 
 Then in components use as:
 
-```
+```html
 <time-ago :datetime="new Date()" tooltip/>
 ```
 
@@ -292,6 +292,7 @@ locale support list :
 - Bulgarian ( bg )
 - Swedish ( se )
 - Dutch / Netherlands ( nl )
+- Hebrew ( he )
 
 Thanks for help:
 
@@ -361,4 +362,8 @@ Thanks for help:
 
 <a href="https://github.com/daankuhlmann25">
   <img src="https://avatars.githubusercontent.com/u/14232256?v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/harshgour">
+  <img src="https://avatars.githubusercontent.com/u/60436404?v=4" width="30" style="border-radius: 100%;"/>
 </a>
