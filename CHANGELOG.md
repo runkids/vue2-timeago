@@ -1,3 +1,7 @@
+# 2.0.2
+
+- Add Hebrew translation [#33](https://github.com/runkids/vue2-timeago/pull/42).
+
 # 2.0.1
 
 - Add Dutch / Netherlands translation [#33](https://github.com/runkids/vue2-timeago/pull/33).
