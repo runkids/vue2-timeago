@@ -17,12 +17,14 @@ import bg from './countries/bg'
 import se from './countries/se'
 import nl from './countries/nl'
 import he from './countries/he'
+import kor from './countries/kor'
 
 export default {
   zh_TW,
   zh_CN,
   en,
   jp,
+  kor, // Korean
   pt_BR, // Portugal(Brazil) 葡萄牙文 (巴西)
   es, // Spain 西班牙文
   ar, // Arabia 阿拉伯文

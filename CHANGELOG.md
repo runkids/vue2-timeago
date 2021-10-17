@@ -1,3 +1,7 @@
+# 2.0.3
+
+- Add Korean translation [#43](https://github.com/runkids/vue2-timeago/pull/43).
+
 # 2.0.2
 
 - Add Hebrew translation [#42](https://github.com/runkids/vue2-timeago/pull/42).

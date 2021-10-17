@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <h2>Version 2.0.2</h2>
+    <h2>Version 2.0.3</h2>
     <h2>
       You opened this page
       <time-ago :locale="locale" :long="longString" class="title" refresh />
@@ -31,6 +31,7 @@
       <el-select v-model="locale" placeholder="Pick Locale">
         <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
       </el-select>
+      Current Locale Code: <span style="margin-left: 10px; color: blue">{{ locale }}</span>
     </div>
     <div class="timeago">
       <time-ago
@@ -64,11 +65,12 @@ export default {
       },
       locale: 'en',
       options: [
-        { value: 'en', label: 'English (en)' },
-        { value: 'zh_TW', label: '繁體中文 (zh_TW)' },
-        { value: 'zh_CN', label: '简体中文 (zh_CN)' },
-        { value: 'jp', label: '日本語 (jp)' },
-        { value: 'pt_BR', label: 'Portugal(Brazil)' },
+        { value: 'en', label: 'English' },
+        { value: 'zh_TW', label: '繁體中文' },
+        { value: 'zh_CN', label: '简体中文' },
+        { value: 'jp', label: '日本語' },
+        { value: 'kor', label: 'Korean' },
+        { value: 'pt_BR', label: 'Portugal' },
         { value: 'es', label: 'Spain' },
         { value: 'ar', label: 'Arabia' },
         { value: 'fr', label: 'French' },
