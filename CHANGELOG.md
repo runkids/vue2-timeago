@@ -1,3 +1,7 @@
+# 2.0.4
+
+- (fix) Korean translation code kor -> ko
+
 # 2.0.3
 
 - Add Korean translation [#43](https://github.com/runkids/vue2-timeago/pull/43).

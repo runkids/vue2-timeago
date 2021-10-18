@@ -1,6 +1,6 @@
 {
   "name": "vue2-timeago",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A vue component used to format date with time ago statement.",
   "main": "dist/vue2-timeago.common.js",
   "unpkg": "dist/vue2-timeago.umd.min.js",

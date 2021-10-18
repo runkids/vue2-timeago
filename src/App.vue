@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <h2>Version 2.0.3</h2>
+    <h2>Version 2.0.4</h2>
     <h2>
       You opened this page
       <time-ago :locale="locale" :long="longString" class="title" refresh />
@@ -69,7 +69,7 @@ export default {
         { value: 'zh_TW', label: '繁體中文' },
         { value: 'zh_CN', label: '简体中文' },
         { value: 'jp', label: '日本語' },
-        { value: 'kor', label: 'Korean' },
+        { value: 'ko', label: 'Korean' },
         { value: 'pt_BR', label: 'Portugal' },
         { value: 'es', label: 'Spain' },
         { value: 'ar', label: 'Arabia' },
