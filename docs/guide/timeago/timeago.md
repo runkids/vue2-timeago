@@ -29,7 +29,7 @@ export default {
 ```html
 <Timeago>
   <template #default="{ secondsElapsed, timeago }">
-    {{ secondsElapsed }} seconds {{ timeago }}
+    {{ secondsElapsed < 60 ? dayjs().format('HH:mm:ss') : timeago }}
   </template>
 </Timeago>
 ```

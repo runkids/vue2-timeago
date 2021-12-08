@@ -16,6 +16,10 @@ module.exports = {
         link: '/',
       },
       {
+        text: 'Installation',
+        link: '/installation',
+      },
+      {
         text: 'Usage',
         link: '/guide/timeago/timeago',
       },
