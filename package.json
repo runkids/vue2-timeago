@@ -1,56 +1,49 @@
 {
   "name": "vue2-timeago",
-  "version": "2.0.1",
-  "description": "A vue component used to format date with time ago statement.",
-  "main": "dist/vue2-timeago.common.js",
-  "unpkg": "dist/vue2-timeago.umd.min.js",
-  "style": "dist/vue2-timeago.css",
-  "keywords": [
-    "vue",
-    "time",
-    "ago",
-    "timeago"
-  ],
-  "homepage": "https://github.com/runkids/vue2-timeago",
+  "version": "3.0.0",
+  "description": "A vue 3 component used to format date with time ago statement.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/runkids/vue2-timeago.git"
   },
   "author": "runkids <egg358358@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "rimraf dist && vue-cli-service build",
-    "build-lib": "rimraf dist && vue-cli-service build --target lib ./src/components/index.js",
-    "lint": "vue-cli-service lint"
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue2-timeago.umd.js",
+  "module": "./dist/vue2-timeago.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue2-timeago.es.js",
+      "require": "./dist/vue2-timeago.umd.js"
+    }
   },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.11",
-    "@vue/cli-plugin-eslint": "^4.5.11",
-    "@vue/cli-service": "^4.5.11",
-    "@vue/eslint-config-standard": "^6.0.0",
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-transform-flow-comments": "^6.22.0",
-    "core-js": "^3.8.3",
-    "element-ui": "^2.15.0",
-    "eslint": "^7.18.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vue": "^7.5.0",
-    "node-sass": "^4.14.1",
-    "prettier": "^2.2.1",
-    "rimraf": "^2.6.2",
-    "sass-loader": "^10.1.1",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "vue": "^2.6.12",
-    "vue-template-compiler": "^2.6.12",
-    "webpack-bundle-analyzer": "^4.4.0"
+  "unpkg": "./dist/vue2-timeago.umd.js",
+  "jsdelivr": "./dist/vue2-timeago.umd.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs --port 8080",
+    "build:lib": "vite build",
+    "analyze": "vite build --config analyze.config.js",
+    "publish:lib": "npm publish --access public",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "format": "prettier .  --write"
   },
   "dependencies": {
-    "v-tooltip": "^2.1.2",
-    "vue2-timeago": "2.0.1"
+    "vue": "^3.2.23"
   },
-  "peerDependencies": {
-    "v-tooltip": "^2.1.2"
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.10.2",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-vue": "^7.14.0",
+    "prettier": "^2.3.2",
+    "rollup-plugin-visualizer": "^5.5.2",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.0",
+    "vitepress": "^0.20.4",
+    "vue-tsc": "^0.28.10"
   }
 }
