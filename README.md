@@ -1,15 +1,12 @@
 # vue2-timeago
 
-[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/) [![npm](https://img.shields.io/npm/v/vue2-timeago.svg)](https://www.npmjs.com/package/vue2-timeago)  [![npm](https://img.shields.io/npm/dt/vue2-timeago.svg)](https://www.npmjs.com/package/vue2-timeago) [![](https://data.jsdelivr.com/v1/package/npm/vue2-timeago/badge)](https://www.jsdelivr.com/package/npm/vue2-timeago) [![npm](https://img.shields.io/npm/l/vue2-timeago.svg)](https://github.com/runkids/vue2-timeago/blob/master/LICENSE)
+[![vue3](https://img.shields.io/badge/vue-3.x-brightgreen.svg)](https://vuejs.org/) [![Version](https://img.shields.io/npm/v/vue2-timeago/next.svg)](https://www.npmjs.com/package/vue2-timeago) [![npm](https://img.shields.io/npm/dt/vue2-timeago.svg)](https://www.npmjs.com/package/vue2-timeago) [![npm](https://img.shields.io/npm/l/vue2-timeago.svg)](https://github.com/runkids/vue2-timeago/blob/master/LICENSE)
 
-# vue2-timeago V2
+# vue2-timeago for Vue 3
 
-### FOR 1.X PLEASE GO TO [THE 1.x BRANCH](https://github.com/runkids/vue2-timeago/tree/v1)
+### FOR Vue 2 PLEASE GO TO [THE master BRANCH](https://github.com/runkids/vue2-timeago)
 
 - Localization supported
-- Show tooltip
-- Auto refresh time
-- When time refresh call a customizable function
 - Formats a date/timestamp to:
   - just now
   - 5m
@@ -25,22 +22,16 @@
 
 ## Navigation
 
-- [Changelog](https://github.com/runkids/vue2-timeago/blob/master/CHANGELOG.md)
+- [Changelog](https://github.com/runkids/vue2-timeago/blob/next/CHANGELOG.md)
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Examples](#Examples)
-- [Props](#Props)
 - [Contributions](#Contributions)
 
-## Live Demo
-
-[![Edit vue2_timeago_demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/embed/myomwvkojj)
-
-## Local Demo
+## Local Docs
 
 ```js
 yarn
-yarn serve
+yarn dev
 ```
 
 ## Installation
@@ -48,224 +39,16 @@ yarn serve
 Get from npm / yarn:
 
 ```js
-npm i vue2-timeago@2.0.1
+npm i vue2-timeago@next
 ```
 
 ```js
-yarn add vue2-timeago@2.0.1
-```
-
-or just include [vue2-timeago.umd.min.js](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.1/dist/vue2-timeago.umd.min.js) to your view like
-
-```js
-<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.1/dist/vue2-timeago.umd.min.js'></script>
+yarn add vue2-timeago@next
 ```
 
 ## Usage
 
-Use this inside your app:
-
-``` js
-import { TimeAgo } from 'vue2-timeago'
-
-export default {
-  name: 'app',
-  components: {
-    TimeAgo,
-  }
-}
-```
-
-##### With Default CSS
-
-```js
-import 'vue2-timeago/dist/vue2-timeago.css'
-```
-
-or just include [vue2-timeago.css](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.1/dist/vue2-timeago.css)
-
-##### HTML
-
-```html
-<time-ago :refresh="60" :datetime="new Date(2018, 7, 4, 0, 24, 0)" locale="zh_TW" tooltip></time-ago>
-```
-
-## Examples
-
-##### 1. locale
-
-Default locale is en, and the library supports en and zh_TW.
-
-```html
-<time-ago locale="en"></time-ago> 
-<time-ago :locale="locale"></time-ago> use v-bind
-```
-
-```js
-export default {
-  ...
-  data(){
-    return{
-      locale:"zh_TW",
-    }
-  },
-  ...
-```
-
-##### 2. datetime
-
-```html
-<time-ago datetime="2018-08-03 15:47:00"></time-ago> 
-<time-ago :datetime="new Date(2018, 7, 4, 0, 24, 0)"></time-ago> use v-bind
-<time-ago :datetime="1533286641826"></time-ago> timestamp
-```
-
-- Note. Don't bind with `new Date()` when you use refresh property.
-  Because every time refresh will get a new date value.
-
-    ```html
-    <time-ago :datetime="new Date(2018, 7, 4, 0, 24, 0)"></time-ago>  --> OK
-    <time-ago refresh :datetime="new Date()"></time-ago> --> not OK
-    ```
-
-    If you want use new Date() , just remove datetime property.
-
-    ```html
-    <time-ago refresh></time-ago>
-    ```
-
-##### 3.  refresh
-
-```html
-<time-ago refresh></time-ago> Boolean , default refresh time 60/s
-<time-ago :refresh="3600"></time-ago> bind value with a number
-<time-ago :refresh="1"></time-ago> Refresh time 1 second
-```
-
-##### 4. tooltip
-
-<img src="https://imgur.com/UAYxE4U.png"/>
-
-- Base on [v-tooltip](https://github.com/Akryum/v-tooltip "v-tooltip"), you can use placement attribute that are allowed in v-tooltip.
-
-```html
-<time-ago tooltip></time-ago> Show tooltip 
-<time-ago :tooltip="false"></time-ago> Disabled tooltip
-```
-
-##### 5. tooltip options
-
-- Default options:
-
-```javascript
-{
-  placement: 'top',
-  content: {datetime string}
-}
-```
-
-- Custom options
-
-```html
-<time-ago tooltip :tooltip-options="tooltipOptions"/>
-```
-
-```javascript
-data () {
-  return {
-    tooltipOptions: {
-      placement: 'bottom',
-    }
-  }
-}
-```
-
-- More info see <https://github.com/Akryum/v-tooltip#other-options>.
-
-##### 6. long
-
-```html
-<time-ago :datetime="datetime"></time-ago> show : 2d
-<time-ago :datetime="datetime" long></time-ago> show : 2 days ago
-```
-
-##### 7. vue2-timeago event
-
-You can do something when time refresh every time
-<img src="https://i.imgur.com/V1K6Xa2.gif"/>
-
-```html
-<time-ago :refresh="1" :locale="locale" @update="timeRefresh" />
-```
-
-Parameters example:
-
-```javascript
-methods: {
-  timeRefresh({ timeago, nowString, timestamp }) {
-    console.log(timeago) // 51m
-    console.log(nowString) // 2021-01-21 10:55
-    console.log(timestamp) // Thu Jan 21 2021 10:55:18 GMT+0800 (台北標準時間)
-  }
-}
-```
-
-##### 8. native event
-
-```html
-<time-ago @click="todo"><time-ago/>
-<time-ago @mouseover="todo"><time-ago/>
-```
-
-## Props
-
-| Property  |  Type |  Default |  Description |
-| ------------ | ------------ | ------------ | ------------ |
-| datetime  |  Date, String, Number  |  new Date()  | The datetime to be formatted.|
-| locale  |  String  |  en    | message language |
-| refresh  |  Boolean, Number  |  false    | The period to update the component, in seconds. When true it will be 60s. Also you can bind a number.|
-| long  |  Boolean  |  false    | Show long string with time message . ex. 3h -> 3 hours age|
-| tooltip  |  Boolean  |  false    | Show tooltip.|
-| tooltip-options  |  Object  | { placement: 'top', content: #datetime string }   |  tooltip options|
-
-## Event
-
-| Property  |   Description |
-| ------------ | ------------ |
-| update | After timer refreshed will trigger this event |
-
-## Nuxt (global registration)
-
-To install in nuxt run
-
-```
-npm i vue2-timeago
-```
-
-In `nuxt.config.js` add
-
-```
-  plugins: [
-    { src: '~/plugins/vue2-timeago' }
-  ],
-```
-
-In `plugins/vue2-timeago.js` type:
-
-```
-import Vue from 'vue';
-import { TimeAgo } from 'vue2-timeago';
-
-import 'vue2-timeago/dist/vue2-timeago.css';
-
-Vue.component('time-ago', TimeAgo);
-```
-
-Then in components use as:
-
-```
-<time-ago :datetime="new Date()" tooltip/>
-```
+See [docs](https://vue2-timeago.netlify.app/)
 
 ## Contributions
 

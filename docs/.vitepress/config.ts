@@ -7,7 +7,7 @@ module.exports = {
     nav: [
       {
         text: 'Github',
-        link: 'https://github.com/runkids/vue2-timeago',
+        link: 'https://github.com/runkids/vue2-timeago/tree/next',
       },
     ],
     sidebar: [

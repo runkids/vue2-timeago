@@ -1,5 +1,9 @@
 <template>
-  <span>{{ timeago }}</span>
+  <span>
+    <slot :timeago="timeago" :secondsElapsed="seconds">
+      {{ timeago }}
+    </slot>
+  </span>
 </template>
 
 <script lang="ts">
@@ -41,6 +45,7 @@ export default defineComponent({
     const timeago = ref('')
     const datetimeString = ref('')
     const timeoutId = ref(0)
+    const seconds = ref(0)
 
     const timerConfig = computed(() => ({
       locale: props.locale,
@@ -55,19 +60,20 @@ export default defineComponent({
         console.warn('[vue2-timeago] Invalid Date provided')
         return
       }
-      let {
+      const {
         timeago: formateValue,
         nowString,
         timestamp,
       } = timer(props.datetime, timerConfig.value)
-      const seconds = Math.round(Math.abs(Date.now() - then) / 1000)
+
+      seconds.value = Math.round(Math.abs(Date.now() - then) / 1000)
 
       const unboundPeriod =
-        seconds < MINUTE
+        seconds.value < MINUTE
           ? 1000
-          : seconds < HOUR
+          : seconds.value < HOUR
           ? 1000 * MINUTE
-          : seconds < DAY
+          : seconds.value < DAY
           ? 1000 * HOUR
           : 1000 * WEEK
 
@@ -84,7 +90,12 @@ export default defineComponent({
           clearTimeout(timeoutId.value)
         }
         timeoutId.value = setTimeout(tick, period)
-        emit('update', { timeago: formateValue, nowString, timestamp, seconds })
+        emit('update', {
+          timeago: formateValue,
+          nowString,
+          timestamp,
+          seconds: seconds.value,
+        })
       }
     }
 
@@ -96,6 +107,7 @@ export default defineComponent({
 
     return {
       timeago,
+      seconds,
     }
   },
 })

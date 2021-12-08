@@ -1876,6 +1876,13 @@ vue-tsc@^0.28.10:
     "@volar/shared" "0.28.10"
     vscode-vue-languageservice "0.28.10"
 
+vue2-timeago@next:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/vue2-timeago/-/vue2-timeago-3.0.1.tgz#404a239171f74ba14dc12ec9aa4922c4b4051781"
+  integrity sha512-U241dngfZRSIz2WcxLM9n8NCmdIxpYkztS/+4kLWJc8HanmHYa/l4rMpVhozWtj4oFLPGIAu8WPgspPCWe/5rg==
+  dependencies:
+    vue "^3.2.23"
+
 vue@^3.2.23, vue@^3.2.24:
   version "3.2.24"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.24.tgz#6de7b01e55740dc37c0a5dbd45e70eed49f95189"

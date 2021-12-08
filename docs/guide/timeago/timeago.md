@@ -1,5 +1,44 @@
 # Usage
 
+```js
+import { Timeago } from 'vue2-timeago'
+
+export default {
+  components: {
+    Timeago,
+  },
+}
+```
+
+## Props
+
+| Property    | Type                 | Default    | Description                                                                                         |
+| :---------- | :------------------- | :--------- | :-------------------------------------------------------------------------------------------------- |
+| `datetime`  | Date, String, Number | new Date() | Datetime can be a Date Object, A UTC date-string or number of milliseconds since epoch time.        |
+| `long`      | Boolean              | true       | Show long string with time message . ex. 3h -> 3 hours age                                          |
+| `locale`    | String               | en         | message language                                                                                    |
+| `minPeriod` | number               | 0          | The minimum number of seconds that the component should wait before updating.                       |
+| `maxPeriod` | number               | 7 days     | The opposite of minPeriod. Use this to force dates to update more often than the default behaviour. |
+
+| Event    | Description                           |
+| :------- | :------------------------------------ |
+| `update` | After timeout will trigger this event |
+
+## Slots
+
+```html
+<Timeago>
+  <template #default="{ secondsElapsed, timeago }">
+    {{ secondsElapsed }} seconds {{ timeago }}
+  </template>
+</Timeago>
+```
+
+| Slot             | Description                                   |
+| :--------------- | :-------------------------------------------- |
+| `secondsElapsed` | Seconds elapsed. Will update same as timeago. |
+| `timeago`        | Timeago string.                               |
+
 ## Examples
 
 ##### 1. locale
@@ -61,20 +100,6 @@ methods: {
 }
 ```
 
-## Props
-
-| Property  | Type                 | Default    | Description                                                                                         |
-| :-------- | :------------------- | :--------- | :-------------------------------------------------------------------------------------------------- |
-| datetime  | Date, String, Number | new Date() | Datetime can be a Date Object, A UTC date-string or number of milliseconds since epoch time.        |
-| long      | Boolean              | false      | Show long string with time message . ex. 3h -> 3 hours age                                          |
-| locale    | String               | en         | message language                                                                                    |
-| minPeriod | number               | 0          | The minimum number of seconds that the component should wait before updating.                       |
-| maxPeriod | number               | 7 days     | The opposite of minPeriod. Use this to force dates to update more often than the default behaviour. |
-
-| Event    | Description                           |
-| :------- | :------------------------------------ |
-| `update` | After timeout will trigger this event |
-
 ## Simple Demo
 
 <ClientOnly>
@@ -88,3 +113,24 @@ methods: {
 <script setup>
 import TimeagoExample from './TimeagoExample.vue'
 </script>
+
+## Locale Support List
+
+- English ( en )
+- 繁體中文 ( zh_TW )
+- 简体中文 ( zh_CN )
+- 日本語 ( jp )
+- Portugal(Brazil) ( pt_BR )
+- Spain ( es )
+- Arabia ( ar )
+- French ( fr )
+- Polish ( pl )
+- Turkish ( tr )
+- Indonesian ( id )
+- Romanian ( ro )
+- Russian ( ru )
+- Germany ( de )
+- Ukrainian ( uk )
+- Bulgarian ( bg )
+- Swedish ( se )
+- Dutch / Netherlands ( nl )

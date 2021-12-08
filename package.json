@@ -1,12 +1,13 @@
 {
   "name": "vue2-timeago",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A vue 3 component used to format date with time ago statement.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/runkids/vue2-timeago.git"
   },
   "author": "runkids <egg358358@gmail.com>",
+  "homepage": "https://vue2-timeago.netlify.app",
   "license": "MIT",
   "files": [
     "dist"
@@ -44,6 +45,11 @@
     "typescript": "^4.4.4",
     "vite": "^2.7.0",
     "vitepress": "^0.20.4",
-    "vue-tsc": "^0.28.10"
+    "vue-tsc": "^0.28.10",
+    "vue2-timeago": "next"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
   }
 }

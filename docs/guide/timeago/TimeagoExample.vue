@@ -27,7 +27,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import { Timeago } from '../../../src/index'
+import { Timeago } from 'vue2-timeago'
+// import { Timeago } from '../../../src/index'
 
 const date = ref(new Date())
 const long = ref(true)
