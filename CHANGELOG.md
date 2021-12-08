@@ -1,3 +1,7 @@
+# 2.0.5
+
+- (fix) typo of slots
+
 # 2.0.4
 
 - (fix) Korean translation code kor -> ko

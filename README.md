@@ -4,7 +4,7 @@
 
 # vue2-timeago V2
 
-### FOR 1.X PLEASE GO TO [THE 1.x BRANCH](https://github.com/runkids/vue2-timeago/tree/v1)
+### 🔥 NEW [vue2-timeago for Vue 3](https://vue2-timeago.netlify.app/)
 
 - Localization supported
 - Show tooltip
@@ -22,6 +22,8 @@
   - 1 hour ~ 1 day , show `** hours ago`
   - 1 day ~ 1 month( 31 days ) , show `** days ago`
   - more than 1 month( 31 days ) , show `yyyy-mm-dd hh:mm`
+
+##### FOR 1.X PLEASE GO TO [THE 1.x BRANCH](https://github.com/runkids/vue2-timeago/tree/v1)
 
 ## Navigation
 
@@ -48,17 +50,17 @@ yarn serve
 Get from npm / yarn:
 
 ```js
-npm i vue2-timeago@2.0.4
+npm i vue2-timeago@2.0.5
 ```
 
 ```js
-yarn add vue2-timeago@2.0.4
+yarn add vue2-timeago@2.0.5
 ```
 
-or just include [vue2-timeago.umd.min.js](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.4/dist/vue2-timeago.umd.min.js) to your view like
+or just include [vue2-timeago.umd.min.js](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.5/dist/vue2-timeago.umd.min.js) to your view like
 
 ```js
-<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.4/dist/vue2-timeago.umd.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.5/dist/vue2-timeago.umd.min.js'></script>
 ```
 
 ## Usage
@@ -82,7 +84,7 @@ export default {
 import 'vue2-timeago/dist/vue2-timeago.css'
 ```
 
-or just include [vue2-timeago.css](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.4/dist/vue2-timeago.css)
+or just include [vue2-timeago.css](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.5/dist/vue2-timeago.css)
 
 ##### HTML
 

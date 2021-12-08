@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <h2>Version 2.0.4</h2>
+    <h2>Version 2.0.5</h2>
     <h2>
       You opened this page
       <time-ago :locale="locale" :long="longString" class="title" refresh />
