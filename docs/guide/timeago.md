@@ -27,11 +27,11 @@ export default {
 ## Slots
 
 ```html
-<Timeago>
+<timeago>
   <template #default="{ secondsElapsed, timeago }">
     {{ secondsElapsed < 60 ? dayjs().format('HH:mm:ss') : timeago }}
   </template>
-</Timeago>
+</timeago>
 ```
 
 | Slot             | Description                                   |
@@ -46,7 +46,9 @@ export default {
 Default locale is en, and the library supports en and zh_TW.
 
 ```html
-<Timeago locale="en" /> <Timeago :locale="locale" />
+<timeago locale="en" /> 
+
+<timeago :locale="locale" />
 ```
 
 ```js
@@ -65,17 +67,17 @@ export default {
 ##### 2. datetime
 
 ```html
-<Timeago /> default: new Date()
-<Timeago datetime="2018-08-03 15:47:00" />
-<Timeago :datetime="new Date(2018, 7, 4, 0, 24, 0)" />
-<Timeago :datetime="1533286641826" /> timestamp
+<timeago /> default: new Date()
+<timeago datetime="2018-08-03 15:47:00" />
+<timeago :datetime="new Date(2018, 7, 4, 0, 24, 0)" />
+<timeago :datetime="1533286641826" /> timestamp
 ```
 
 ##### 3. long
 
 ```html
-<Timeago :datetime="datetime" /> show : 2d
-<Timeago :datetime="datetime" long /> show : 2 days ago
+<timeago :datetime="datetime" /> show : 2d
+<timeago :datetime="datetime" long /> show : 2 days ago
 ```
 
 ##### 4. vue2-timeago event
@@ -84,7 +86,7 @@ You can do something after timeout.
 <img src="https://i.imgur.com/V1K6Xa2.gif"/>
 
 ```html
-<Timeago :locale="locale" @update="update" />
+<timeago :locale="locale" @update="update" />
 ```
 
 Example:
@@ -103,15 +105,15 @@ methods: {
 ## Simple Demo
 
 <ClientOnly>
-  <TimeagoExample />
+  <timeagoExample />
 </ClientOnly>
 
 ```vue
-<Timeago :locale="locale" :long="long" :datetime="date" />
+<timeago :locale="locale" :long="long" :datetime="date" />
 ```
 
 <script setup>
-import TimeagoExample from './TimeagoExample.vue'
+import TimeagoExample from '../components/timeagoExample.vue'
 </script>
 
 ## Locale Support List

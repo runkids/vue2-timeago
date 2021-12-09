@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         text: 'Usage',
-        link: '/guide/timeago/timeago',
+        link: '/guide/timeago',
       },
     ],
   },
