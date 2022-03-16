@@ -1,3 +1,6 @@
+# 2.0.6
+
+- Add Thai translation [#45](https://github.com/runkids/vue2-timeago/pull/45).
 # 2.0.5
 
 - (fix) typo of slots
