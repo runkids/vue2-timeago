@@ -92,6 +92,8 @@ locale support list :
 - Bulgarian ( bg )
 - Swedish ( se )
 - Dutch / Netherlands ( nl )
+- Hebrew (he)
+- Thai ( th )
 
 Thanks for help:
 
@@ -161,4 +163,8 @@ Thanks for help:
 
 <a href="https://github.com/daankuhlmann25">
   <img src="https://avatars.githubusercontent.com/u/14232256?v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/kon3ko">
+  <img src="https://avatars.githubusercontent.com/u/50349884?v=4" width="30" style="border-radius: 100%;"/>
 </a>

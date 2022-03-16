@@ -18,11 +18,13 @@ import se from './countries/se'
 import nl from './countries/nl'
 import he from './countries/he'
 import ko from './countries/ko'
+import th from './countries/th'
 
 export default {
   zh_TW,
   zh_CN,
   en,
+  th,
   jp,
   ko, // Korean
   pt_BR, // Portugal(Brazil) 葡萄牙文 (巴西)

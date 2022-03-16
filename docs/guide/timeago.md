@@ -136,3 +136,5 @@ import TimeagoExample from '../components/timeagoExample.vue'
 - Bulgarian ( bg )
 - Swedish ( se )
 - Dutch / Netherlands ( nl )
+- Hebrew (he)
+- Thai ( th )

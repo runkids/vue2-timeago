@@ -54,6 +54,7 @@ const localeOptions = [
   { value: 'se', label: 'Swedish' },
   { value: 'nl', label: 'Dutch / Netherlands' },
   { value: 'he', label: 'Hebrew' },
+  { value: 'th', label: 'Thai' },
 ]
 
 function update({ timeago, nowString, timestamp, seconds }) {
