@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <h2>Version 2.0.5</h2>
+    <h2>Version 2.0.6</h2>
     <h2>
       You opened this page
       <time-ago :locale="locale" :long="longString" class="title" refresh />
@@ -85,6 +85,7 @@ export default {
         { value: 'se', label: 'Swedish' },
         { value: 'nl', label: 'Dutch / Netherlands' },
         { value: 'he', label: 'Hebrew' },
+        { value: 'th', label: 'Thai' },
       ],
     }
   },
