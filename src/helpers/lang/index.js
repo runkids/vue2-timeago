@@ -19,6 +19,7 @@ import nl from './countries/nl'
 import he from './countries/he'
 import ko from './countries/ko'
 import th from './countries/th'
+import no from './countries/no'
 
 export default {
   zh_TW,
@@ -42,4 +43,5 @@ export default {
   bg, // Bulgarian
   se, // Swedish
   nl, // Dutch / Netherlands
+  no // Norwegian
 }
