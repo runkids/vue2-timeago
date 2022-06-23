@@ -2443,9 +2443,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001219:
-  version "1.0.30001247"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001247.tgz#105be7a8fb30cdd303275e769a9dfb87d4b3577a"
-  integrity sha512-4rS7co+7+AoOSPRPOPUt5/GdaqZc0EsUpWk66ofE3HJTAajUK2Ss2VwoNzVN69ghg8lYYlh0an0Iy4LIHHo9UQ==
+  version "1.0.30001358"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001358.tgz"
+  integrity sha512-hvp8PSRymk85R20bsDra7ZTCpSVGN/PAz9pSAjPSjKC+rNmnUk5vCRgJwiTT/O4feQ/yu/drvZYpKxxhbFuChw==
 
 case-sensitive-paths-webpack-plugin@^2.3.0:
   version "2.4.0"
@@ -9000,7 +9000,7 @@ vue2-timeago@2.0.1:
     v-tooltip "^2.1.2"
     vue2-timeago "2.0.1"
 
-vue2-timeago@2.0.6:
+vue2-timeago@2.0.7:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/vue2-timeago/-/vue2-timeago-2.0.6.tgz#92f10b17cb90322541c13bf0f117017a57a5656a"
   integrity sha512-bxGv7lj0cijz9XXZovOL3NmBe2LzmNFWnMa/XxXhR4F+gVy1GxRrVwuWrwAKf1iyGihCLfZqKDr/SPodfWA+dA==

@@ -1,3 +1,8 @@
+# 2.0.7
+
+- Add Danish translation [#51](https://github.com/runkids/vue2-timeago/pull/51).
+- Add Norwegian translation [#54](https://github.com/runkids/vue2-timeago/pull/54).
+
 # 2.0.6
 
 - Add Thai translation [#45](https://github.com/runkids/vue2-timeago/pull/45).
