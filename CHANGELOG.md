@@ -1,6 +1,8 @@
+# 2.0.9
+- (fix) vi translation bug.
 # 2.0.8
-
 - Add Vietnam translation [#57](https://github.com/runkids/vue2-timeago/pull/57).
+
 # 2.0.7
 
 - Add Danish translation [#51](https://github.com/runkids/vue2-timeago/pull/51).

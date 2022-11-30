@@ -1,26 +1,27 @@
-import zh_TW from './countries/zh_TW'
-import zh_CN from './countries/zh_CN'
-import en from './countries/en'
-import jp from './countries/jp'
-import es from './countries/es'
-import pt_BR from './countries/pt_BR'
 import ar from './countries/ar'
+import bg from './countries/bg'
+import da from './countries/da'
+import de from './countries/de'
+import en from './countries/en'
+import es from './countries/es'
 import fr from './countries/fr'
-import pl from './countries/pl'
-import tr from './countries/tr'
+import he from './countries/he'
 import id from './countries/id'
+import jp from './countries/jp'
+import ko from './countries/ko'
+import nl from './countries/nl'
+import no from './countries/no'
+import pl from './countries/pl'
+import pt_BR from './countries/pt_BR'
 import ro from './countries/ro'
 import ru from './countries/ru'
-import de from './countries/de'
-import uk from './countries/uk'
-import bg from './countries/bg'
 import se from './countries/se'
-import nl from './countries/nl'
-import he from './countries/he'
-import ko from './countries/ko'
 import th from './countries/th'
-import no from './countries/no'
-import da from './countries/da'
+import tr from './countries/tr'
+import uk from './countries/uk'
+import vi from './countries/vi'
+import zh_CN from './countries/zh_CN'
+import zh_TW from './countries/zh_TW'
 
 export default {
   zh_TW,
@@ -46,4 +47,5 @@ export default {
   nl, // Dutch / Netherlands
   no, // Norwegian
   da, // Danish
+  vi, // Vietnam
 }

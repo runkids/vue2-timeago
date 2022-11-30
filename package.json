@@ -1,6 +1,6 @@
 {
   "name": "vue2-timeago",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "A vue component used to format date with time ago statement.",
   "main": "dist/vue2-timeago.common.js",
   "unpkg": "dist/vue2-timeago.umd.min.js",
@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "v-tooltip": "^2.1.2",
-    "vue2-timeago": "2.0.8"
+    "vue2-timeago": "2.0.9"
   },
   "peerDependencies": {
     "v-tooltip": "^2.1.2"
