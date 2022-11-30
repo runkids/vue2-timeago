@@ -50,17 +50,17 @@ yarn serve
 Get from npm / yarn:
 
 ```js
-npm i vue2-timeago@2.0.7
+npm i vue2-timeago@2.0.8
 ```
 
 ```js
-yarn add vue2-timeago@2.0.7
+yarn add vue2-timeago@2.0.8
 ```
 
-or just include [vue2-timeago.umd.min.js](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.7/dist/vue2-timeago.umd.min.js) to your view like
+or just include [vue2-timeago.umd.min.js](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.8/dist/vue2-timeago.umd.min.js) to your view like
 
 ```js
-<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.7/dist/vue2-timeago.umd.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.8/dist/vue2-timeago.umd.min.js'></script>
 ```
 
 ## Usage
@@ -84,7 +84,7 @@ export default {
 import 'vue2-timeago/dist/vue2-timeago.css'
 ```
 
-or just include [vue2-timeago.css](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.7/dist/vue2-timeago.css)
+or just include [vue2-timeago.css](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.8/dist/vue2-timeago.css)
 
 ##### HTML
 
@@ -299,6 +299,7 @@ locale support list :
 - Thai ( th )
 - Danish ( da )
 - Norwegian ( no )
+- Vietnam ( vi )
 
 Thanks for help:
 
@@ -389,4 +390,8 @@ Thanks for help:
 
 <a href="https://github.com/boskakke">
   <img src="https://avatars.githubusercontent.com/u/4995742?v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/vigstudio">
+  <img src="https://avatars.githubusercontent.com/u/34742453?v=4" width="30" style="border-radius: 100%;"/>
 </a>
