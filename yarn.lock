@@ -3201,9 +3201,9 @@ decamelize@^1.1.0, decamelize@^1.2.0:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@^1.0.1:
   version "1.1.1"
@@ -8992,13 +8992,13 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue2-timeago@2.0.7:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/vue2-timeago/-/vue2-timeago-2.0.7.tgz#1a65ed382a2ff3b01d6d23fb940b22523f543196"
-  integrity sha512-EZDeEhnTbWRsbajZ3wv49dnsSOp3xgmFLnp7LrJLl6vMVpmOpVMUGsxdNbvTehl0KNitNLg27MOvVPhIvB97HA==
+vue2-timeago@2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/vue2-timeago/-/vue2-timeago-2.0.9.tgz#71694c184fc6145569546b8156ebc765367fe513"
+  integrity sha512-Uv5hp2GNfN2TwfPY4i3gyLULkqdqD36G/L6n7URq4PdWtH6WvYqy1wFVtz5q4oQuX+hqhh66x+VcD5Mj4QZzYw==
   dependencies:
     v-tooltip "^2.1.2"
-    vue2-timeago "2.0.7"
+    vue2-timeago "2.0.9"
 
 vue@^2.6.12:
   version "2.6.14"
