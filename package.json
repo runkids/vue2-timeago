@@ -13,13 +13,8 @@
     "dist"
   ],
   "main": "./dist/vue2-timeago.umd.js",
-  "module": "./dist/vue2-timeago.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/vue2-timeago.es.js",
-      "require": "./dist/vue2-timeago.umd.js"
-    }
-  },
+  "module": "./dist/vue2-timeago.umd.js",
+  "exports": "./dist/vue2-timeago.umd.js",
   "unpkg": "./dist/vue2-timeago.umd.js",
   "jsdelivr": "./dist/vue2-timeago.umd.js",
   "scripts": {
