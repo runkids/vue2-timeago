@@ -13,7 +13,7 @@
     "dist"
   ],
   "main": "./dist/vue2-timeago.umd.js",
-  "module": "./dist/vue2-timeago.es.js",
+  "module": "./dist/vue2-timeago.umd.js",
   "exports": {
     ".": {
       "import": "./dist/vue2-timeago.es.js",
