@@ -16,7 +16,6 @@
   "module": "./dist/vue2-timeago.umd.js",
   "exports": {
     ".": {
-      "import": "./dist/vue2-timeago.es.js",
       "require": "./dist/vue2-timeago.umd.js"
     }
   },
