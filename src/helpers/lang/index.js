@@ -23,7 +23,7 @@ import vi from './countries/vi'
 import zh_CN from './countries/zh_CN'
 import zh_TW from './countries/zh_TW'
 
-export default {
+const locales = {
   zh_TW,
   zh_CN,
   en,
@@ -49,3 +49,9 @@ export default {
   da, // Danish
   vi, // Vietnam
 }
+
+export function addLocale(name, locale) {
+  locales[name] = locale
+}
+
+export default locales
