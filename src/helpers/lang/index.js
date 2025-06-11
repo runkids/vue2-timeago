@@ -24,7 +24,7 @@ import zh_CN from './countries/zh_CN'
 import zh_TW from './countries/zh_TW'
 import it from './countries/it'
 
-export default {
+const locales = {
   zh_TW,
   zh_CN,
   en,
@@ -51,3 +51,9 @@ export default {
   vi, // Vietnam
   it, // Italian
 }
+
+export function addLocale(name, locale) {
+  locales[name] = locale
+}
+
+export default locales

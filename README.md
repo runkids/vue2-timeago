@@ -274,6 +274,28 @@ Then in components use as:
 locale translations: The component needs more locale translations. You can `Open an issue to write the locale translations, or submit a pull request`.
 See example [here](https://github.com/runkids/vue2-timeago/blob/master/src/helpers/lang).
 
+### Custom locale
+
+You can register new locales at runtime without editing library files.
+
+```javascript
+import Vue from 'vue'
+import Vue2Timeago, { addLocale } from 'vue2-timeago'
+
+addLocale('pirate', {
+  short: { now: 'arr', sec: 's', min: 'm', hour: 'h', day: 'd' },
+  long: {
+    now: 'arr',
+    sec: (n) => `${n} second${n > 1 ? 's' : ''} arr`,
+    min: (n) => `${n} minute${n > 1 ? 's' : ''} arr`,
+    hour: (n) => `${n} hour${n > 1 ? 's' : ''} arr`,
+    day: (n) => `${n} day${n > 1 ? 's' : ''} arr`,
+  },
+})
+
+Vue.use(Vue2Timeago)
+```
+
 locale support list :
 
 - English ( en )

@@ -1,4 +1,5 @@
 import TimeAgo from './TimeAgo.vue'
+import { addLocale } from '../helpers/lang'
 
 const components = {
   TimeAgo,
@@ -27,4 +28,4 @@ if (GlobalVue) {
 }
 
 export default components
-export { TimeAgo }
+export { TimeAgo, addLocale }
