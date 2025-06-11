@@ -300,6 +300,7 @@ locale support list :
 - Danish ( da )
 - Norwegian ( no )
 - Vietnam ( vi )
+- Italian ( it )
 
 Thanks for help:
 

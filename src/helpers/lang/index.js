@@ -22,6 +22,7 @@ import uk from './countries/uk'
 import vi from './countries/vi'
 import zh_CN from './countries/zh_CN'
 import zh_TW from './countries/zh_TW'
+import it from './countries/it'
 
 export default {
   zh_TW,
@@ -48,4 +49,5 @@ export default {
   no, // Norwegian
   da, // Danish
   vi, // Vietnam
+  it, // Italian
 }
