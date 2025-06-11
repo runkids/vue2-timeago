@@ -50,17 +50,17 @@ yarn serve
 Get from npm / yarn:
 
 ```js
-npm i vue2-timeago@2.0.9
+npm i vue2-timeago@2.1.0
 ```
 
 ```js
-yarn add vue2-timeago@2.0.9
+yarn add vue2-timeago@2.1.0
 ```
 
-or just include [vue2-timeago.umd.min.js](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.9/dist/vue2-timeago.umd.min.js) to your view like
+or just include [vue2-timeago.umd.min.js](https://cdn.jsdelivr.net/npm/vue2-timeago@2.1.0/dist/vue2-timeago.umd.min.js) to your view like
 
 ```js
-<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.9/dist/vue2-timeago.umd.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue2-timeago@2.1.0/dist/vue2-timeago.umd.min.js'></script>
 ```
 
 ## Usage
@@ -84,12 +84,38 @@ export default {
 import 'vue2-timeago/dist/vue2-timeago.css'
 ```
 
-or just include [vue2-timeago.css](https://cdn.jsdelivr.net/npm/vue2-timeago@2.0.9/dist/vue2-timeago.css)
+or just include [vue2-timeago.css](https://cdn.jsdelivr.net/npm/vue2-timeago@2.1.0/dist/vue2-timeago.css)
 
 ##### HTML
 
 ```html
-<time-ago :refresh="60" :datetime="new Date(2018, 7, 4, 0, 24, 0)" locale="zh_TW" tooltip></time-ago>
+<time-ago :refresh="60" :datetime="new Date(2018, 7, 4, 0, 24, 0)" locale="zh_TW" tooltip />
+```
+
+### Custom locale
+
+You can register new locales at runtime without editing library files.
+
+```javascript
+import Vue from 'vue'
+import Vue2Timeago, { addLocale } from 'vue2-timeago'
+
+addLocale('pirate', {
+  short: { now: 'arr', sec: 's', min: 'm', hour: 'h', day: 'd' },
+  long: {
+    now: 'arr',
+    sec: (n) => `${n} second${n > 1 ? 's' : ''} arr`,
+    min: (n) => `${n} minute${n > 1 ? 's' : ''} arr`,
+    hour: (n) => `${n} hour${n > 1 ? 's' : ''} arr`,
+    day: (n) => `${n} day${n > 1 ? 's' : ''} arr`,
+  },
+})
+
+Vue.use(Vue2Timeago)
+```
+
+```html
+<time-ago locale="pirate" />
 ```
 
 ## Examples
@@ -274,27 +300,6 @@ Then in components use as:
 locale translations: The component needs more locale translations. You can `Open an issue to write the locale translations, or submit a pull request`.
 See example [here](https://github.com/runkids/vue2-timeago/blob/master/src/helpers/lang).
 
-### Custom locale
-
-You can register new locales at runtime without editing library files.
-
-```javascript
-import Vue from 'vue'
-import Vue2Timeago, { addLocale } from 'vue2-timeago'
-
-addLocale('pirate', {
-  short: { now: 'arr', sec: 's', min: 'm', hour: 'h', day: 'd' },
-  long: {
-    now: 'arr',
-    sec: (n) => `${n} second${n > 1 ? 's' : ''} arr`,
-    min: (n) => `${n} minute${n > 1 ? 's' : ''} arr`,
-    hour: (n) => `${n} hour${n > 1 ? 's' : ''} arr`,
-    day: (n) => `${n} day${n > 1 ? 's' : ''} arr`,
-  },
-})
-
-Vue.use(Vue2Timeago)
-```
 
 locale support list :
 
@@ -417,4 +422,8 @@ Thanks for help:
 
 <a href="https://github.com/vigstudio">
   <img src="https://avatars.githubusercontent.com/u/34742453?v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/mirkos93">
+  <img src="https://avatars.githubusercontent.com/u/295767?v=4" width="30" style="border-radius: 100%;"/>
 </a>

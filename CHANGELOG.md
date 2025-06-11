@@ -1,3 +1,7 @@
+# 2.1.0
+- Add Italian translation [#65](https://github.com/runkids/vue2-timeago/pull/65).
+- Add runtime locale registration [#66](https://github.com/runkids/vue2-timeago/pull/66).
+
 # 2.0.9
 - (fix) vi translation bug.
 # 2.0.8
