@@ -1,32 +1,36 @@
-import zh_TW from './countries/zh_TW'
-import zh_CN from './countries/zh_CN'
-import en from './countries/en'
-import jp from './countries/jp'
-import es from './countries/es'
-import pt_BR from './countries/pt_BR'
 import ar from './countries/ar'
+import bg from './countries/bg'
+import da from './countries/da'
+import de from './countries/de'
+import en from './countries/en'
+import es from './countries/es'
 import fr from './countries/fr'
-import pl from './countries/pl'
-import tr from './countries/tr'
+import he from './countries/he'
 import id from './countries/id'
+import jp from './countries/jp'
+import ko from './countries/ko'
+import nl from './countries/nl'
+import no from './countries/no'
+import pl from './countries/pl'
+import pt_BR from './countries/pt_BR'
 import ro from './countries/ro'
 import ru from './countries/ru'
-import de from './countries/de'
-import uk from './countries/uk'
-import bg from './countries/bg'
 import se from './countries/se'
-import nl from './countries/nl'
-import he from './countries/he'
-import ko from './countries/ko'
 import th from './countries/th'
+import tr from './countries/tr'
+import uk from './countries/uk'
+import vi from './countries/vi'
+import zh_CN from './countries/zh_CN'
+import zh_TW from './countries/zh_TW'
+import it from './countries/it'
 
 export default {
   zh_TW,
   zh_CN,
   en,
-  th,
   jp,
   ko, // Korean
+  th, // Thai
   pt_BR, // Portugal(Brazil) 葡萄牙文 (巴西)
   es, // Spain 西班牙文
   ar, // Arabia 阿拉伯文
@@ -42,4 +46,8 @@ export default {
   bg, // Bulgarian
   se, // Swedish
   nl, // Dutch / Netherlands
+  no, // Norwegian
+  da, // Danish
+  vi, // Vietnam
+  it, // Italian
 }
