@@ -427,3 +427,7 @@ Thanks for help:
 <a href="https://github.com/mirkos93">
   <img src="https://avatars.githubusercontent.com/u/295767?v=4" width="30" style="border-radius: 100%;"/>
 </a>
+
+<a href="https://github.com/thorrak">
+  <img src="https://avatars.githubusercontent.com/u/2457900?v=4" width="30" style="border-radius: 100%;"/>
+</a>
