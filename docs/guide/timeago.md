@@ -113,7 +113,7 @@ methods: {
 ```
 
 <script setup>
-import TimeagoExample from '../components/timeagoExample.vue'
+import TimeagoExample from '../components/TimeagoExample.vue'
 </script>
 
 ## Locale Support List
