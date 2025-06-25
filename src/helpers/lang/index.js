@@ -7,6 +7,7 @@ import es from './countries/es'
 import fr from './countries/fr'
 import he from './countries/he'
 import id from './countries/id'
+import it from './countries/it'
 import jp from './countries/jp'
 import ko from './countries/ko'
 import nl from './countries/nl'
@@ -22,7 +23,6 @@ import uk from './countries/uk'
 import vi from './countries/vi'
 import zh_CN from './countries/zh_CN'
 import zh_TW from './countries/zh_TW'
-import it from './countries/it'
 
 export default {
   zh_TW,

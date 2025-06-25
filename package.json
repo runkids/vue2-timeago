@@ -18,9 +18,9 @@
   "unpkg": "./dist/vue2-timeago.umd.js",
   "jsdelivr": "./dist/vue2-timeago.umd.js",
   "scripts": {
-    "dev": "vitepress dev docs",
+    "dev": "vitepress dev docs --port 8888",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs --port 8080",
+    "serve": "vitepress serve docs --port 8888",
     "build:lib": "vite build",
     "analyze": "vite build --config analyze.config.js",
     "publish:lib": "npm publish --access public",
@@ -41,7 +41,7 @@
     "vite": "^2.7.0",
     "vitepress": "^0.20.4",
     "vue-tsc": "^0.28.10",
-    "vue2-timeago": "next"
+    "vue2-timeago": "3.0.3"
   },
   "publishConfig": {
     "access": "public",
