@@ -138,3 +138,7 @@ import TimeagoExample from '../components/timeagoExample.vue'
 - Dutch / Netherlands ( nl )
 - Hebrew (he)
 - Thai ( th )
+- Danish ( da )
+- Norwegian ( no )
+- Vietnam ( vi )
+- Italian ( it )

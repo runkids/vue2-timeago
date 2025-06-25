@@ -94,6 +94,10 @@ locale support list :
 - Dutch / Netherlands ( nl )
 - Hebrew (he)
 - Thai ( th )
+- Danish ( da )
+- Norwegian ( no )
+- Vietnam ( vi )
+- Italian ( it )
 
 Thanks for help:
 
@@ -167,4 +171,24 @@ Thanks for help:
 
 <a href="https://github.com/kon3ko">
   <img src="https://avatars.githubusercontent.com/u/50349884?v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/Coreusa">
+  <img src="https://avatars.githubusercontent.com/u/706874?v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/boskakke">
+  <img src="https://avatars.githubusercontent.com/u/4995742?v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/vigstudio">
+  <img src="https://avatars.githubusercontent.com/u/34742453?v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/mirkos93">
+  <img src="https://avatars.githubusercontent.com/u/295767?v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/thorrak">
+  <img src="https://avatars.githubusercontent.com/u/2457900?v=4" width="30" style="border-radius: 100%;"/>
 </a>
